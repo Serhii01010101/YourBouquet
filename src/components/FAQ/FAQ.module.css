@@ -1,13 +1,26 @@
-.FAQ {
+/* .FAQ {
+  width: 1440px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 240px 0;
 }
 
 .FAQTitle {
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 .FAQList {
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  flex-direction: column;
+  width: 690px;
+  background-color: #fff;
 }
 
 .FAQItem {
+  border-bottom: 1px solid;
 }
 
 .FAQItemTitle {
@@ -17,4 +30,57 @@
 }
 
 .FAQIcon {
+} */
+
+/* FAQ.module.css */
+
+.FAQ {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.FAQTitle {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.FAQList {
+  list-style: none;
+  padding: 0;
+}
+
+.FAQItem {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.FAQItemTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.FAQItemText {
+  margin-top: 10px;
+  font-size: 1em;
+  display: none;
+}
+
+.FAQIcon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Active state */
+.FAQItem.active .FAQItemText {
+  display: block;
+}
+
+.FAQItem.active .FAQIcon use {
+  href: '../../../public/icons.svg#icon-accordeon-statusPlus';
 }

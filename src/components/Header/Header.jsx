@@ -26,37 +26,41 @@ const Header = () => {
         </ul>
       </nav>
 
-      <form className={styles.searchForm}>
-        <input
-          className={styles.searchFormInput}
-          type="search"
-          name="search"
-          placeholder="Search"
-          autoComplete="off"
-          onChange={() => {}}
-          value=""
-        />
-        <button className={styles.searchFormBtn}>
-          <svg className={styles.icon}>
-            <use href="../../../public/icons.svg#icon-search"></use>
-          </svg>
+      <div className={styles.headerBox}>
+        <form className={styles.searchForm}>
+          <input
+            className={styles.searchFormInput}
+            type="search"
+            name="search"
+            placeholder="Search"
+            autoComplete="off"
+            onChange={() => {}}
+            value=""
+          />
+          <button className={styles.searchFormBtn}>
+            <svg className={styles.icon}>
+              <use href="../../../public/icons.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <div className={styles.iconBox}>
+          <a href="/" className={styles.iconBtn}>
+            <svg className={styles.icon}>
+              <use href="../../../public/icons.svg#icon-heart"></use>
+            </svg>
+          </a>
+          <a href="/" className={styles.iconBtn}>
+            <svg className={styles.icon}>
+              <use href="../../../public/icons.svg#icon-busket"></use>
+            </svg>
+          </a>
+        </div>
+
+        <button type="button" className={styles.btnLogin}>
+          Log in
         </button>
-      </form>
-
-      <a href="/" className={styles.iconBtn}>
-        <svg className={styles.icon}>
-          <use href="../../../public/icons.svg#icon-heart"></use>
-        </svg>
-      </a>
-      <a href="/" className={styles.iconBtn}>
-        <svg className={styles.icon}>
-          <use href="../../../public/icons.svg#icon-busket"></use>
-        </svg>
-      </a>
-
-      <button type="button" className={styles.btnLogin}>
-        Log in
-      </button>
+      </div>
     </header>
   );
 };

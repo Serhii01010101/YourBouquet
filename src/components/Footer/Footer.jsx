@@ -4,45 +4,48 @@ const Footer = () => {
   return (
     <footer id="footer" className={styles.footer}>
       <nav className={styles.footerNavigation}>
-        <ul className={styles.footerMenu}>
-          <li className={styles.footerMenuItem}>
-            <a href="/" className={styles.footerMenuLink}>
-              About us
-            </a>
-          </li>
-          <li className={styles.footerMenuItem}>
-            <a href="/" className={styles.footerMenuLink}>
-              Catalog
-            </a>
-          </li>
-          <li className={styles.footerMenuItem}>
-            <a href="/" className={styles.footerMenuLink}>
-              FAQ
-            </a>
-          </li>
-        </ul>
-        <ul className={styles.rightsList}>
-          <li className={styles.rightsItem}>
-            <a
-              href="/"
-              className={styles.rightsLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Privacy policy
-            </a>
-          </li>
-          <li className={styles.rightsItem}>
-            <a
-              href="/"
-              className={styles.rightsLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Company name, 2024
-            </a>
-          </li>
-        </ul>
+        <div className={styles.footerContainerInfo}>
+          <ul className={styles.footerMenu}>
+            <li className={styles.footerMenuItem}>
+              <a href="/" className={styles.footerMenuLink}>
+                About us
+              </a>
+            </li>
+            <li className={styles.footerMenuItem}>
+              <a href="/" className={styles.footerMenuLink}>
+                Catalog
+              </a>
+            </li>
+            <li className={styles.footerMenuItem}>
+              <a href="/" className={styles.footerMenuLink}>
+                FAQ
+              </a>
+            </li>
+          </ul>
+          <ul className={styles.rightsList}>
+            <li className={styles.rightsItem}>
+              <a
+                href="/"
+                className={styles.rightsLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Privacy policy
+              </a>
+            </li>
+            <li className={styles.rightsItem}>
+              <a
+                href="/"
+                className={styles.rightsLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Company name, 2024
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <address className={styles.footerAddress}>
           <p className={styles.footerAddressHead}>Contact us</p>
 
@@ -70,38 +73,40 @@ const Footer = () => {
         </address>
       </nav>
 
-      <a href="/" className={styles.footerLogo}>
-        YourBouquet
-      </a>
+      <div className={styles.logoSocialContainer}>
+        <a href="/" className={styles.footerLogo}>
+          YourBouquet
+        </a>
 
-      <ul className={styles.footerSocialsList}>
-        <li className={styles.footerSocialsItem}>
-          <a
-            className={styles.footerSocialsLink}
-            href=""
-            aria-label="instagram"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg className={styles.footerSocialsIcon}>
-              <use href="../../../public/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li className={styles.footerSocialsItem}>
-          <a
-            className={styles.footerSocialsLink}
-            href=""
-            aria-label="telegram"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg className={styles.footerSocialsIcon}>
-              <use href="../../../public/icons.svg#icon-telegram"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+        <ul className={styles.footerSocialsList}>
+          <li className={styles.footerSocialsItem}>
+            <a
+              className={styles.footerSocialsLink}
+              href=""
+              aria-label="instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg className={styles.footerSocialsIcon}>
+                <use href="../../../public/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li className={styles.footerSocialsItem}>
+            <a
+              className={styles.footerSocialsLink}
+              href=""
+              aria-label="telegram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg className={styles.footerSocialsIcon}>
+                <use href="../../../public/icons.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   );
 };

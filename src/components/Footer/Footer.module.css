@@ -1,19 +1,38 @@
 .footer {
+  width: 1440px;
+  padding: 96px 154px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .footerNavigation {
+  display: flex;
+}
+
+.footerContainerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-right: 291px;
 }
 
 .footerMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .footerMenuItem {
+  display: flex;
 }
 
 .footerMenuLink {
 }
 
 .rightsList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .rightsItem {
@@ -26,21 +45,50 @@
 }
 
 .footerAddressHead {
+  color: #000;
+
+  /* Body-18 (Bold) */
+  font-family: 'Open Sans Hebrew';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 24px;
 }
 
 .footerAddressList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
 }
 
 .footerAddressItem {
 }
 
 .footerAddressLink {
+  color: #000;
+  font-family: 'Open Sans Hebrew';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .footerLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  background-color: #f880c8;
+  color: #f9f9f9;
+  border-radius: 50%;
 }
 
 .footerSocialsList {
+  display: flex;
+  gap: 24px;
 }
 
 .footerSocialsItem {
@@ -50,4 +98,15 @@
 }
 
 .footerSocialsIcon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+}
+
+.logoSocialContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-left: auto;
+  padding: 12px;
 }

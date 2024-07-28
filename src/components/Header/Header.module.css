@@ -1,13 +1,34 @@
 .header {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  padding: 14px 106px;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .headerNavigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .headerLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  width: 120px;
+  height: 120px;
+  background-color: #f880c8;
+  color: #f9f9f9;
+  border-radius: 50%;
+  margin-right: 128px;
 }
 
 .headerMenu {
+  display: flex;
+  gap: 44px;
 }
 
 .headerMenuItem {
@@ -16,20 +37,57 @@
 .headerMenuLink {
 }
 
-.searchForm {
+.headerBox {
+  display: flex;
+}
+
+.header .searchForm {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 2px 12px;
+  border-radius: 12px;
+  border: 0.5px solid;
+  margin-right: 24px;
 }
 
 .searchFormInput {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 0;
 }
 
 .searchFormBtn {
+  border: 0;
+  background-color: #fff;
 }
 
 .iconBtn {
 }
 
+.iconBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-right: 44px;
+}
+
 .icon {
+  width: 26px;
+  height: 26px;
 }
 
 .btnLogin {
+  display: flex;
+  width: 100px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 20px;
 }

@@ -1,17 +1,69 @@
 .hero {
+  /* width: 1440px; */
+  background-image: url(../../../public/pexels-amina-filkins.png);
+  background-size: cover;
+  padding-top: 412px;
+  padding-bottom: 513px;
+  margin: 0 auto;
 }
 
 .heroTitle {
+  text-align: center;
+  font-family: Belleza;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
+  margin-bottom: 12px;
 }
 
 .heroText {
+  color: var(--Text-Colors-White, #fff);
+  text-align: center;
+  font-family: 'Open Sans Hebrew';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
 }
 
 .heroButtons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 .heroContactLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0;
+  background-color: #fff;
+  border-radius: 12px;
+  font-family: 'Open Sans Hebrew';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #006dd2;
+  width: 197px;
 }
 
 .heroOrderBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0;
+  background-color: #f880c8;
+  border-radius: 12px;
+  font-family: 'Open Sans Hebrew';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
+  width: 197px;
+  border: 0;
 }
