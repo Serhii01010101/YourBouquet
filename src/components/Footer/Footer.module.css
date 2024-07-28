@@ -102,6 +102,7 @@
 .footerSocialsList {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 
 .footerSocialsItem {
