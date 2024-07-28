@@ -1,17 +1,46 @@
 .chooseUs {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 40px;
 }
 
 .chooseUsTitle {
+  color: var(--Elements-Colors-Black, var(--Black-282828, #282828));
+  text-align: center;
+  font-family: 'Open Sans Hebrew';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 80px;
 }
 
 .chooseUsList {
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
 }
 
 .chooseUsItem {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
 }
 
 .chooseUsItemIcon {
+  width: 137px;
+  margin-bottom: 40px;
 }
 
 .chooseUsItemTitle {
+  color: var(--Elements-Colors-Black, var(--Black-282828, #282828));
+  text-align: center;
+  /* Body-18 (Bold) */
+  font-family: 'Open Sans Hebrew';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0;
 }
