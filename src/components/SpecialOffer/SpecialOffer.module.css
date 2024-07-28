@@ -2,29 +2,29 @@
   width: 1440px;
   margin: 0 auto;
   padding: 80px;
+  position: relative;
 }
 
 .offerTitle {
   visibility: hidden;
-  /* opacity: 0; */
   margin: 0;
 }
 
 .offerList {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .offerItem {
   position: relative;
-  border-radius: 12px;
-  /* border: 1px solid; */
   overflow: hidden;
 }
 
 .offerItemImg {
-  width: 305px;
+  width: 100%;
   margin-bottom: 32px;
+  border-radius: 12px;
 }
 
 .offerItemIcon {

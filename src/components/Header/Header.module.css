@@ -35,6 +35,13 @@
 }
 
 .headerMenuLink {
+  color: #000;
+
+  font-family: 'Open Sans Hebrew';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .headerBox {

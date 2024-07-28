@@ -27,6 +27,13 @@
 }
 
 .footerMenuLink {
+  color: #000;
+
+  font-family: 'Open Sans Hebrew';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .rightsList {
@@ -39,6 +46,12 @@
 }
 
 .rightsLink {
+  color: #000;
+  font-family: 'Open Sans Hebrew';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .footerAddress {
