@@ -8,7 +8,7 @@ const Catalog = () => {
         <li className={styles.catalogItem}>
           <a href="" className={styles.catalogItemLink}>
             <img
-              src="../../../public/catalogMono.jpg"
+              src="./../../public/catalogMono.jpg"
               alt="Mono bouquets image"
               className={styles.catalogItemImg}
             />
@@ -18,7 +18,7 @@ const Catalog = () => {
         <li className={styles.catalogItem}>
           <a href="" className={styles.catalogItemLink}>
             <img
-              src="../../../public/catalogDesign.jpg"
+              src="./../../public/catalogDesign.jpg"
               alt="Design bouquets image"
               className={styles.catalogItemImg}
             />
@@ -28,7 +28,7 @@ const Catalog = () => {
         <li className={styles.catalogItem}>
           <a href="" className={styles.catalogItemLink}>
             <img
-              src="../../../public/catalogWedding.jpg"
+              src="./../../public/catalogWedding.jpg"
               alt="Wedding bouquets image"
               className={styles.catalogItemImg}
             />
@@ -38,7 +38,7 @@ const Catalog = () => {
         <li className={styles.catalogItem}>
           <a href="" className={styles.catalogItemLink}>
             <img
-              src="../../../public/catalogSpecial.jpg"
+              src="/../../public/catalogSpecial.jpg"
               alt="Bouquets image"
               className={styles.catalogItemImg}
             />
@@ -48,7 +48,7 @@ const Catalog = () => {
         <li className={styles.catalogItem}>
           <a href="" className={styles.catalogItemLink}>
             <img
-              src="../../../public/catalogRoses.jpg"
+              src="/../../public/catalogRoses.jpg"
               alt="Bouquets of roses image"
               className={styles.catalogItemImg}
             />
@@ -58,7 +58,7 @@ const Catalog = () => {
         <li className={styles.catalogItem}>
           <a href="" className={styles.catalogItemLink}>
             <img
-              src="../../../public/catalogBox.jpg"
+              src="/../../public/catalogBox.jpg"
               alt="Box bouquets image"
               className={styles.catalogItemImg}
             />
