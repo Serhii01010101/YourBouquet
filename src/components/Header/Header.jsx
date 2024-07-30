@@ -39,7 +39,7 @@ const Header = () => {
           />
           <button className={styles.searchFormBtn}>
             <svg className={styles.icon}>
-              <use href="../../../public/icons.svg#icon-search"></use>
+              <use href="./../../public/icons.svg#icon-search"></use>
             </svg>
           </button>
         </form>
