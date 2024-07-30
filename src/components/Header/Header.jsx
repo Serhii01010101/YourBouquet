@@ -52,7 +52,7 @@ const Header = () => {
           </a>
           <a href="/" className={styles.iconBtn}>
             <svg className={styles.icon}>
-              <use href="../../../public/icons.svg#icon-busket"></use>
+              <use href="../../../public/icons.svg#icon-basket"></use>
             </svg>
           </a>
         </div>

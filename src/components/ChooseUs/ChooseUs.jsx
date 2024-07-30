@@ -7,25 +7,25 @@ const ChooseUs = () => {
       <ul className={styles.chooseUsList}>
         <li className={styles.chooseUsItem}>
           <svg className={styles.chooseUsItemIcon}>
-            <use href="/../../public/icons.svg#icon-easy-order"></use>
+            <use href="../../../public/icons.svg#icon-easy-order"></use>
           </svg>
           <h3 className={styles.chooseUsItemTitle}>Easy order</h3>
         </li>
         <li className={styles.chooseUsItem}>
           <svg className={styles.chooseUsItemIcon}>
-            <use href="/../../public/icons.svg#icon-fast-delivery"></use>
+            <use href="../../../public/icons.svg#icon-fast-delivery"></use>
           </svg>
           <h3 className={styles.chooseUsItemTitle}>Fast delivery</h3>
         </li>
         <li className={styles.chooseUsItem}>
           <svg className={styles.chooseUsItemIcon}>
-            <use href="/../../public/icons.svg#icon-premium-quality"></use>
+            <use href="../../../public/icons.svg#icon-premium-quality"></use>
           </svg>
           <h3 className={styles.chooseUsItemTitle}>Premium Quality</h3>
         </li>
         <li className={styles.chooseUsItem}>
           <svg className={styles.chooseUsItemIcon}>
-            <use href="/../../public/icons.svg#icon-your-own-design"></use>
+            <use href="../../../public/icons.svg#icon-your-own-design"></use>
           </svg>
           <h3 className={styles.chooseUsItemTitle}>Your own design</h3>
         </li>
