@@ -1,18 +1,15 @@
 .chooseUs {
   width: 1440px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 80px 212px;
 }
 
 .chooseUsTitle {
   color: var(--Elements-Colors-Black, var(--Black-282828, #282828));
   text-align: center;
-  font-family: 'Open Sans Hebrew';
+  font-family: 'Open Sans', serif;
   font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
+  font-weight: 400;
   margin-bottom: 80px;
 }
 
@@ -24,23 +21,21 @@
 
 .chooseUsItem {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  padding: 40px;
+  gap: 14px;
 }
 
 .chooseUsItemIcon {
-  width: 137px;
-  margin-bottom: 40px;
+  width: 62px;
+  height: 62px;
 }
 
 .chooseUsItemTitle {
   color: var(--Elements-Colors-Black, var(--Black-282828, #282828));
   text-align: center;
-  /* Body-18 (Bold) */
-  font-family: 'Open Sans Hebrew';
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
   margin-bottom: 0;
 }

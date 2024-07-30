@@ -3,6 +3,7 @@
   padding: 96px 154px;
   margin: 0 auto;
   display: flex;
+  background-color: #fff;
 }
 
 .footerNavigation {
@@ -29,7 +30,6 @@
 .footerMenuLink {
   color: #000;
 
-  font-family: 'Open Sans Hebrew';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -47,11 +47,6 @@
 
 .rightsLink {
   color: #000;
-  font-family: 'Open Sans Hebrew';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .footerAddress {
@@ -59,13 +54,9 @@
 
 .footerAddressHead {
   color: #000;
-
-  /* Body-18 (Bold) */
-  font-family: 'Open Sans Hebrew';
-  font-size: 18px;
   font-style: normal;
+  font-size: 18px;
   font-weight: 700;
-  line-height: normal;
   margin-bottom: 24px;
 }
 
@@ -81,22 +72,20 @@
 
 .footerAddressLink {
   color: #000;
-  font-family: 'Open Sans Hebrew';
-  font-size: 16px;
   font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .footerLogo {
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 120px;
   height: 120px;
   background-color: #f880c8;
   color: #f9f9f9;
   border-radius: 50%;
+  padding: 12px;
 }
 
 .footerSocialsList {
@@ -113,8 +102,8 @@
 
 .footerSocialsIcon {
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
 }
 
 .logoSocialContainer {

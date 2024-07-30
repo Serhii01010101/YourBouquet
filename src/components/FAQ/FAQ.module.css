@@ -1,54 +1,25 @@
-/* .FAQ {
-  width: 1440px;
+.FAQ {
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 100px 375px 200px 375px;
   background-color: #f9f9f9;
-  padding: 240px 0;
 }
 
 .FAQTitle {
+  font-size: 32px;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 80px;
 }
 
 .FAQList {
   display: flex;
-  margin: 0 auto;
-  padding: 20px;
   flex-direction: column;
-  width: 690px;
-  background-color: #fff;
-}
-
-.FAQItem {
-  border-bottom: 1px solid;
-}
-
-.FAQItemTitle {
-}
-
-.FAQItemText {
-}
-
-.FAQIcon {
-} */
-
-/* FAQ.module.css */
-
-.FAQ {
-  max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
-}
-
-.FAQTitle {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.FAQList {
   list-style: none;
   padding: 0;
+  background-color: #fff;
+  padding: 20px;
 }
 
 .FAQItem {

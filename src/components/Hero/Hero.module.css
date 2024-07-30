@@ -1,32 +1,29 @@
 .hero {
   /* width: 1440px; */
-  background-image: url(../../../public/pexels-amina-filkins.png);
+  background-image: url(../../../public/catalogSpecial.jpg);
   background-size: cover;
-  padding-top: 412px;
-  padding-bottom: 513px;
+  padding-top: 297px;
+  padding-bottom: 100px;
   margin: 0 auto;
 }
 
 .heroTitle {
+  color: var(--Text-Colors-White, #fff);
   text-align: center;
-  font-family: Belleza;
+
+  font-family: 'Belleza';
   font-size: 72px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
-  color: #fff;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .heroText {
   color: var(--Text-Colors-White, #fff);
   text-align: center;
-  font-family: 'Open Sans Hebrew';
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 40px;
+  font-size: 24px;
+
+  margin-bottom: 54px;
 }
 
 .heroButtons {
@@ -42,11 +39,9 @@
   padding: 14px 0;
   background-color: #fff;
   border-radius: 12px;
-  font-family: 'Open Sans Hebrew';
+  font-family: 'Open Sans';
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+
   color: #006dd2;
   width: 197px;
 }
@@ -58,11 +53,9 @@
   padding: 14px 0;
   background-color: #f880c8;
   border-radius: 12px;
-  font-family: 'Open Sans Hebrew';
+  font-family: 'Open Sans';
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-weight: 700;
   color: #fff;
   width: 197px;
   border: 0;
