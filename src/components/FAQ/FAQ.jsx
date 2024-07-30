@@ -15,7 +15,7 @@ const FAQ = () => {
             classic bouquets and exclusive arrangements to suit any taste.
           </p>
           <svg className={styles.FAQIcon}>
-            <use href="../../../public/icons.svg#icon-accordeon-statusMinus"></use>
+            <use href="/../../public/icons.svg#icon-minus"></use>
           </svg>
         </li>
         <li className={styles.FAQItem}>
@@ -28,7 +28,7 @@ const FAQ = () => {
             classic bouquets and exclusive arrangements to suit any taste.
           </p>
           <svg className={styles.FAQIcon}>
-            <use href="../../../public/icons.svg#icon-accordeon-statusMinus"></use>
+            <use href="/../../public/icons.svg#icon-minus"></use>
           </svg>
         </li>
         <li className={styles.FAQItem}>
@@ -41,7 +41,7 @@ const FAQ = () => {
             classic bouquets and exclusive arrangements to suit any taste.
           </p>
           <svg className={styles.FAQIcon}>
-            <use href="../../../public/icons.svg#icon-accordeon-statusMinus"></use>
+            <use href="/../../public/icons.svg#icon-minus"></use>
           </svg>
         </li>
       </ul>
