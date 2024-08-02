@@ -26,6 +26,9 @@
   margin-bottom: 54px;
 }
 
+.heroText {
+}
+
 .heroButtons {
   display: flex;
   gap: 20px;
