@@ -2,9 +2,16 @@
   width: 1440px;
   margin: 0 auto;
   display: flex;
-  padding: 14px 106px 26px 106px;
+  padding: 26px 106px 26px 126px;
   align-items: baseline;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 435px) {
+  .header {
+    width: 435px;
+    padding: 20px;
+  }
 }
 
 .headerNavigation {
@@ -30,17 +37,17 @@
   gap: 44px;
 }
 
+@media screen and (max-width: 435px) {
+  .headerMenu {
+    display: none;
+  }
+}
+
 .headerMenuItem {
 }
 
 .headerMenuLink {
   color: #000;
-
-  font-family: 'Open Sans Hebrew';
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .headerBox {
@@ -57,11 +64,15 @@
   margin-right: 24px;
 }
 
+@media screen and (max-width: 435px) {
+  .header .searchForm {
+    display: none;
+  }
+}
+
 .searchFormInput {
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-family: 'Manrope';
   border: 0;
 }
 
@@ -78,6 +89,12 @@
   align-items: center;
   gap: 12px;
   margin-right: 44px;
+}
+
+@media screen and (max-width: 435px) {
+  .iconBox {
+    display: none;
+  }
 }
 
 .icon {

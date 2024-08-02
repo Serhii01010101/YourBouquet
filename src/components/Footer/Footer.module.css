@@ -3,10 +3,27 @@
   padding: 96px 154px;
   margin: 0 auto;
   display: flex;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 435px) {
+  .footer {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    width: 435px;
+    padding: 68px 40px 68px 40px;
+  }
 }
 
 .footerNavigation {
   display: flex;
+}
+
+@media screen and (max-width: 435px) {
+  .footerNavigation {
+    margin: 0 auto;
+  }
 }
 
 .footerContainerInfo {
@@ -14,6 +31,15 @@
   flex-direction: column;
   gap: 32px;
   margin-right: 291px;
+}
+
+@media screen and (max-width: 435px) {
+  .footerContainerInfo {
+    gap: 16px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 12px;
+  }
 }
 
 .footerMenu {
@@ -26,10 +52,16 @@
   display: flex;
 }
 
+@media screen and (max-width: 435px) {
+  .footerMenuItem {
+    margin: 0 auto;
+    gap: 16px;
+  }
+}
+
 .footerMenuLink {
   color: #000;
 
-  font-family: 'Open Sans Hebrew';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -47,25 +79,22 @@
 
 .rightsLink {
   color: #000;
-  font-family: 'Open Sans Hebrew';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .footerAddress {
 }
 
+@media screen and (max-width: 435px) {
+  .footerAddress {
+    display: none;
+  }
+}
+
 .footerAddressHead {
   color: #000;
-
-  /* Body-18 (Bold) */
-  font-family: 'Open Sans Hebrew';
-  font-size: 18px;
   font-style: normal;
+  font-size: 18px;
   font-weight: 700;
-  line-height: normal;
   margin-bottom: 24px;
 }
 
@@ -81,22 +110,28 @@
 
 .footerAddressLink {
   color: #000;
-  font-family: 'Open Sans Hebrew';
-  font-size: 16px;
   font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .footerLogo {
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 120px;
   height: 120px;
   background-color: #f880c8;
   color: #f9f9f9;
   border-radius: 50%;
+  padding: 12px;
+}
+
+@media screen and (max-width: 435px) {
+  .footerLogo {
+    width: 84px;
+    height: 84px;
+    font-size: 13px;
+  }
 }
 
 .footerSocialsList {
@@ -113,8 +148,15 @@
 
 .footerSocialsIcon {
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 435px) {
+  .footerSocialsIcon {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .logoSocialContainer {
@@ -123,4 +165,11 @@
   gap: 24px;
   margin-left: auto;
   padding: 12px;
+}
+
+@media screen and (max-width: 435px) {
+  .logoSocialContainer {
+    margin: 0 auto;
+    padding-top: 16px;
+  }
 }

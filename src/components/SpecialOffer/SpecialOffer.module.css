@@ -1,13 +1,33 @@
 .offer {
-  width: 1440px;
+  /* width: 1440px; */
   margin: 0 auto;
-  padding: 80px;
+  padding: 100px 80px;
   position: relative;
+  background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 435px) {
+  .offer {
+    width: 435px;
+    padding: 68px 20px 68px 20px;
+  }
 }
 
 .offerTitle {
-  visibility: hidden;
-  margin: 0;
+  color: var(--Elements-Colors-Black, #282828);
+  text-align: center;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 435px) {
+  .offerTitle {
+    margin-bottom: 40px;
+  }
 }
 
 .offerList {
@@ -16,9 +36,21 @@
   align-items: center;
 }
 
+@media screen and (max-width: 435px) {
+  .offerList {
+    flex-wrap: wrap;
+  }
+}
+
 .offerItem {
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (max-width: 435px) {
+  .offerItem {
+    width: 185px;
+  }
 }
 
 .offerItemImg {
@@ -27,17 +59,22 @@
   border-radius: 12px;
 }
 
+@media screen and (max-width: 435px) {
+  .offerItemImg {
+    margin-bottom: 12px;
+  }
+}
 .offerItemIcon {
   position: absolute;
-  right: 62px;
-  bottom: -7px;
+  right: 0;
+  top: 0;
   width: 40px;
   height: 40px;
+  padding: 6px;
 }
 
 .offerItemTitle {
   color: var(--Text-Colors-Black, #000);
-  font-family: 'Open Sans Hebrew';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -47,30 +84,56 @@
   margin-bottom: 16px;
 }
 
+@media screen and (max-width: 435px) {
+  .offerItemTitle {
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+  }
+}
+
 .offerItemPrice {
-  color: var(--Text-Colors-Black, #000);
-  font-family: 'Open Sans Hebrew';
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  display: flex;
+  align-items: center;
+
+  font-size: 24px;
   margin: 0;
+}
+
+@media screen and (max-width: 435px) {
+  .offerItemPrice {
+    font-size: 16px;
+  }
 }
 
 .offerItemPreviousPrice {
   color: var(--Elements-Colors-Hot-Pink, #f880c8);
-  font-family: Manrope;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-size: 14px;
+  font-family: 'Open Sans', serif;
+
   text-decoration-line: line-through;
   margin: 7px;
 }
 
 .offerItemBtn {
-  position: absolute;
-  right: 10px;
-  bottom: 0px;
   display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 305px;
+  padding: 14px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: var(--Elements-Colors-Hot-Pink, #f880c8);
+  border: 0;
+  color: #fff;
+
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media screen and (max-width: 435px) {
+  .offerItemBtn {
+    width: 185px;
+    margin-top: 14px;
+  }
 }

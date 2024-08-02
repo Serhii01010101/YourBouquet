@@ -1,46 +1,81 @@
 .chooseUs {
   width: 1440px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 80px 212px;
 }
 
+@media screen and (max-width: 435px) {
+  .chooseUs {
+    max-width: 435px;
+    padding: 68px 100px 68px 100px;
+  }
+}
 .chooseUsTitle {
   color: var(--Elements-Colors-Black, var(--Black-282828, #282828));
   text-align: center;
-  font-family: 'Open Sans Hebrew';
+  font-family: 'Open Sans', serif;
   font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
+  font-weight: 400;
   margin-bottom: 80px;
+}
+
+@media screen and (max-width: 435px) {
+  .chooseUsTitle {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
 }
 
 .chooseUsList {
   display: flex;
-  gap: 100px;
+  flex-wrap: wrap;
   justify-content: space-between;
+  row-gap: 32px;
+}
+
+@media screen and (max-width: 435px) {
+  .chooseUsList {
+    flex-wrap: wrap;
+  }
 }
 
 .chooseUsItem {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  padding: 40px;
+  gap: 14px;
+}
+
+@media screen and (max-width: 435px) {
+  .chooseUsItem {
+    width: calc((100% - 64px * 1) / 2);
+    row-gap: 10px;
+  }
 }
 
 .chooseUsItemIcon {
-  width: 137px;
-  margin-bottom: 40px;
+  width: 62px;
+  height: 62px;
+}
+
+@media screen and (max-width: 435px) {
+  .chooseUsItemIcon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .chooseUsItemTitle {
   color: var(--Elements-Colors-Black, var(--Black-282828, #282828));
   text-align: center;
-  /* Body-18 (Bold) */
-  font-family: 'Open Sans Hebrew';
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 435px) {
+  .chooseUsItemTitle {
+    font-size: 14px;
+  }
 }
