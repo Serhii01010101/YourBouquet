@@ -6,8 +6,24 @@
   background-color: #fff;
 }
 
+@media screen and (max-width: 435px) {
+  .footer {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    width: 435px;
+    padding: 68px 40px 68px 40px;
+  }
+}
+
 .footerNavigation {
   display: flex;
+}
+
+@media screen and (max-width: 435px) {
+  .footerNavigation {
+    margin: 0 auto;
+  }
 }
 
 .footerContainerInfo {
@@ -15,6 +31,15 @@
   flex-direction: column;
   gap: 32px;
   margin-right: 291px;
+}
+
+@media screen and (max-width: 435px) {
+  .footerContainerInfo {
+    gap: 16px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 12px;
+  }
 }
 
 .footerMenu {
@@ -25,6 +50,13 @@
 
 .footerMenuItem {
   display: flex;
+}
+
+@media screen and (max-width: 435px) {
+  .footerMenuItem {
+    margin: 0 auto;
+    gap: 16px;
+  }
 }
 
 .footerMenuLink {
@@ -50,6 +82,12 @@
 }
 
 .footerAddress {
+}
+
+@media screen and (max-width: 435px) {
+  .footerAddress {
+    display: none;
+  }
 }
 
 .footerAddressHead {
@@ -88,6 +126,14 @@
   padding: 12px;
 }
 
+@media screen and (max-width: 435px) {
+  .footerLogo {
+    width: 84px;
+    height: 84px;
+    font-size: 13px;
+  }
+}
+
 .footerSocialsList {
   display: flex;
   gap: 24px;
@@ -106,10 +152,24 @@
   height: 24px;
 }
 
+@media screen and (max-width: 435px) {
+  .footerSocialsIcon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 .logoSocialContainer {
   display: flex;
   flex-direction: column;
   gap: 24px;
   margin-left: auto;
   padding: 12px;
+}
+
+@media screen and (max-width: 435px) {
+  .logoSocialContainer {
+    margin: 0 auto;
+    padding-top: 16px;
+  }
 }

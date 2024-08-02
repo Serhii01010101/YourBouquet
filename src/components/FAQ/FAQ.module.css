@@ -5,11 +5,25 @@
   background-color: #f9f9f9;
 }
 
+@media screen and (max-width: 435px) {
+  .FAQ {
+    max-width: 435px;
+    padding: 68px 20px;
+  }
+}
+
 .FAQTitle {
   font-size: 32px;
   font-weight: 400;
   text-align: center;
   margin-bottom: 80px;
+}
+
+@media screen and (max-width: 435px) {
+  .FAQTitle {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
 }
 
 .FAQList {
@@ -21,11 +35,23 @@
   background-color: #fff;
   padding: 20px;
 }
+@media screen and (max-width: 435px) {
+  .FAQList {
+    padding: 12px 0 12px 0;
+  }
+}
 
 .FAQItem {
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 435px) {
+  .FAQItem {
+    display: flex;
+    align-items: stretch;
+  }
 }
 
 .FAQItemTitle {
@@ -34,6 +60,12 @@
   align-items: center;
   cursor: pointer;
   font-size: 1.2em;
+}
+
+@media screen and (max-width: 435px) {
+  .FAQItemTitle {
+    font-size: 16px;
+  }
 }
 
 .FAQItemText {
@@ -45,6 +77,13 @@
 .FAQIcon {
   width: 20px;
   height: 20px;
+}
+
+@media screen and (max-width: 435px) {
+  .FAQIcon {
+    width: 44px;
+    height: 40px;
+  }
 }
 
 /* Active state */

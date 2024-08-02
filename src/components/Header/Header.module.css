@@ -7,6 +7,13 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 435px) {
+  .header {
+    width: 435px;
+    padding: 20px;
+  }
+}
+
 .headerNavigation {
   display: flex;
   align-items: center;
@@ -30,6 +37,12 @@
   gap: 44px;
 }
 
+@media screen and (max-width: 435px) {
+  .headerMenu {
+    display: none;
+  }
+}
+
 .headerMenuItem {
 }
 
@@ -51,6 +64,12 @@
   margin-right: 24px;
 }
 
+@media screen and (max-width: 435px) {
+  .header .searchForm {
+    display: none;
+  }
+}
+
 .searchFormInput {
   font-size: 12px;
   font-family: 'Manrope';
@@ -70,6 +89,12 @@
   align-items: center;
   gap: 12px;
   margin-right: 44px;
+}
+
+@media screen and (max-width: 435px) {
+  .iconBox {
+    display: none;
+  }
 }
 
 .icon {

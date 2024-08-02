@@ -5,6 +5,13 @@
   background-color: #f9f9f9;
 }
 
+@media screen and (max-width: 435px) {
+  .catalog {
+    max-width: 435px;
+    padding: 68px 20px;
+  }
+}
+
 .catalogTitle {
   color: #000;
   text-align: center;
@@ -13,10 +20,23 @@
   margin-bottom: 80px;
 }
 
+@media screen and (max-width: 435px) {
+  .catalogTitle {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+}
+
 .catalogList {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+@media screen and (max-width: 435px) {
+  .catalogList {
+    justify-content: space-around;
+  }
 }
 
 .catalogItem {
@@ -26,6 +46,13 @@
   border: 0px solid;
   border-radius: 12px;
   overflow: hidden;
+}
+
+@media screen and (max-width: 435px) {
+  .catalogItem {
+    width: calc(50% - 20px);
+    height: 234px;
+  }
 }
 
 .catalogItemLink {
@@ -56,4 +83,12 @@
   color: #ffffff;
   text-align: center;
   white-space: nowrap;
+}
+
+@media screen and (max-width: 435px) {
+  .catalogItemTitle {
+    font-size: 24px;
+    text-align: center;
+    white-space: wrap;
+  }
 }

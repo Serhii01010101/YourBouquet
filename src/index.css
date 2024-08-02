@@ -35,3 +35,10 @@ img {
 button {
   cursor: pointer;
 }
+
+:root {
+  --main-color-white: #ffffff;
+  --seconadary-color-brown: #bea69e;
+  --black-color: #121212;
+  --grey-color: #1d1d1d;
+}
