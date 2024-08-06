@@ -5,9 +5,9 @@
   background-color: #f9f9f9;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .catalog {
-    max-width: 435px;
+    max-width: 100%;
     padding: 68px 20px;
   }
 }
@@ -20,7 +20,7 @@
   margin-bottom: 80px;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .catalogTitle {
     font-size: 24px;
     margin-bottom: 40px;
@@ -33,7 +33,7 @@
   gap: 20px;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .catalogList {
     justify-content: space-around;
   }
@@ -48,7 +48,7 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .catalogItem {
     width: calc(50% - 20px);
     height: 234px;
@@ -85,7 +85,7 @@
   white-space: nowrap;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .catalogItemTitle {
     font-size: 24px;
     text-align: center;
