@@ -11,6 +11,11 @@ const Header = () => {
         </Link>
         <ul className={styles.headerMenu}>
           <li className={styles.headerMenuItem}>
+            <Link to="/" className={styles.headerMenuLink}>
+              Special offer
+            </Link>
+          </li>
+          <li className={styles.headerMenuItem}>
             <Link to={ROUTES.CATALOG} className={styles.headerMenuLink}>
               Catalog
             </Link>
