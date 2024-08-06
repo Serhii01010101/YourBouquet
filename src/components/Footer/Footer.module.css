@@ -6,12 +6,12 @@
   background-color: #fff;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .footer {
     display: flex;
     gap: 16px;
     flex-direction: column;
-    width: 435px;
+    width: 100%;
     padding: 68px 40px 68px 40px;
   }
 }
@@ -20,7 +20,7 @@
   display: flex;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .footerNavigation {
     margin: 0 auto;
   }
@@ -33,7 +33,7 @@
   margin-right: 291px;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .footerContainerInfo {
     gap: 16px;
     margin: 0 auto;
@@ -52,7 +52,7 @@
   display: flex;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .footerMenuItem {
     margin: 0 auto;
     gap: 16px;
@@ -84,7 +84,7 @@
 .footerAddress {
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .footerAddress {
     display: none;
   }
@@ -126,7 +126,7 @@
   padding: 12px;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .footerLogo {
     width: 84px;
     height: 84px;
@@ -152,7 +152,7 @@
   height: 24px;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .footerSocialsIcon {
     width: 32px;
     height: 32px;
@@ -167,7 +167,7 @@
   padding: 12px;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .logoSocialContainer {
     margin: 0 auto;
     padding-top: 16px;

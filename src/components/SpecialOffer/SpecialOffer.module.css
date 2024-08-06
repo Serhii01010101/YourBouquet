@@ -6,9 +6,9 @@
   background-color: #f9f9f9;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .offer {
-    width: 435px;
+    width: 100%;
     padding: 68px 20px 68px 20px;
   }
 }
@@ -24,7 +24,7 @@
   margin-bottom: 80px;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .offerTitle {
     margin-bottom: 40px;
   }
@@ -36,7 +36,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .offerList {
     flex-wrap: wrap;
   }
@@ -47,9 +47,9 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .offerItem {
-    width: 185px;
+    width: calc((100% - 20px) / 2);
   }
 }
 
@@ -59,7 +59,7 @@
   border-radius: 12px;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .offerItemImg {
     margin-bottom: 12px;
   }
@@ -84,7 +84,7 @@
   margin-bottom: 16px;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .offerItemTitle {
     padding-bottom: 4px;
     margin-bottom: 12px;
@@ -99,7 +99,7 @@
   margin: 0;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .offerItemPrice {
     font-size: 16px;
   }
@@ -131,9 +131,9 @@
   line-height: normal;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 768px) {
   .offerItemBtn {
-    width: 185px;
+    width: 100%;
     margin-top: 14px;
   }
 }
