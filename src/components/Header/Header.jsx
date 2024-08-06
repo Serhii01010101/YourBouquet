@@ -1,27 +1,29 @@
+import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
+import { ROUTES } from '../../utils/routes';
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.headerNavigation}>
-        <a href="/" className={styles.headerLogo}>
+        <Link to={ROUTES.HOME} className={styles.headerLogo}>
           YourBouquet
-        </a>
+        </Link>
         <ul className={styles.headerMenu}>
           <li className={styles.headerMenuItem}>
-            <a href="/" className={styles.headerMenuLink}>
+            <Link to={ROUTES.CATALOG} className={styles.headerMenuLink}>
               Catalog
-            </a>
+            </Link>
           </li>
           <li className={styles.headerMenuItem}>
-            <a href="/" className={styles.headerMenuLink}>
+            <Link to="/" className={styles.headerMenuLink}>
               About us
-            </a>
+            </Link>
           </li>
           <li className={styles.headerMenuItem}>
-            <a href="/" className={styles.headerMenuLink}>
+            <Link to="/" className={styles.headerMenuLink}>
               Contacts
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -45,16 +47,16 @@ const Header = () => {
         </form>
 
         <div className={styles.iconBox}>
-          <a href="/" className={styles.iconBtn}>
+          <Link to="/" className={styles.iconBtn}>
             <svg className={styles.icon}>
               <use href="../../../public/icons.svg#icon-heart"></use>
             </svg>
-          </a>
-          <a href="/" className={styles.iconBtn}>
+          </Link>
+          <Link to="/" className={styles.iconBtn}>
             <svg className={styles.icon}>
               <use href="../../../public/icons.svg#icon-basket"></use>
             </svg>
-          </a>
+          </Link>
         </div>
 
         <button type="button" className={styles.btnLogin}>

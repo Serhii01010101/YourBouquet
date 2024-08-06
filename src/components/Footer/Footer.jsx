@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import { ROUTES } from '../../utils/routes';
+
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -7,19 +10,19 @@ const Footer = () => {
         <div className={styles.footerContainerInfo}>
           <ul className={styles.footerMenu}>
             <li className={styles.footerMenuItem}>
-              <a href="/" className={styles.footerMenuLink}>
+              <Link to="/" className={styles.footerMenuLink}>
                 About us
-              </a>
+              </Link>
             </li>
             <li className={styles.footerMenuItem}>
-              <a href="/" className={styles.footerMenuLink}>
+              <Link to={ROUTES.CATALOG} className={styles.footerMenuLink}>
                 Catalog
-              </a>
+              </Link>
             </li>
             <li className={styles.footerMenuItem}>
-              <a href="/" className={styles.footerMenuLink}>
+              <Link to="/" className={styles.footerMenuLink}>
                 FAQ
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className={styles.rightsList}>
@@ -74,15 +77,15 @@ const Footer = () => {
       </nav>
 
       <div className={styles.logoSocialContainer}>
-        <a href="/" className={styles.footerLogo}>
+        <Link to={ROUTES.HOME} className={styles.footerLogo}>
           YourBouquet
-        </a>
+        </Link>
 
         <ul className={styles.footerSocialsList}>
           <li className={styles.footerSocialsItem}>
             <a
               className={styles.footerSocialsLink}
-              href=""
+              href="https://www.instagram.com"
               aria-label="instagram"
               target="_blank"
               rel="noopener noreferrer"
@@ -95,7 +98,7 @@ const Footer = () => {
           <li className={styles.footerSocialsItem}>
             <a
               className={styles.footerSocialsLink}
-              href=""
+              href="https://web.telegram.org/k"
               aria-label="telegram"
               target="_blank"
               rel="noopener noreferrer"
