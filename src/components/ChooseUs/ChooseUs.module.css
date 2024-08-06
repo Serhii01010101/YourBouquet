@@ -7,9 +7,18 @@
 @media screen and (max-width: 768px) {
   .chooseUs {
     width: 100%;
+    /* padding: 68px 0 68px 0; */
     padding: 68px 100px 68px 100px;
   }
 }
+
+@media screen and (max-width: 396px) {
+  .chooseUs {
+    width: 100%;
+    padding: 68px 20px 68px 20px;
+  }
+}
+
 .chooseUsTitle {
   color: var(--Elements-Colors-Black, var(--Black-282828, #282828));
   text-align: center;
