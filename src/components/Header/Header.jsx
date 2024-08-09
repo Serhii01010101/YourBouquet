@@ -55,11 +55,25 @@ const Header = () => {
               <use href="../../../public/icons.svg#icon-basket"></use>
             </svg>
           </a>
+          <a
+            href="/"
+            className={
+              (styles.linkBurger, styles.iconBtn, styles.js_iconBurger)
+            }
+          >
+            <svg className={(styles.iconBurger, styles.icon)}>
+              <use href="../../../public/icons.svg#icon-basket-done"></use>
+            </svg>
+          </a>
         </div>
 
         <button type="button" className={styles.btnLogin}>
           Log in
         </button>
+
+        <svg className={(styles.iconBurger, styles.icon, styles.iconLogin)}>
+          <use href="../../../public/icons.svg#icon-checkmark "></use>
+        </svg>
       </div>
     </header>
   );
