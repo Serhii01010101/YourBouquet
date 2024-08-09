@@ -34,6 +34,7 @@
   display: flex;
   gap: 20px;
   align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -55,6 +56,7 @@
 
 .offerItemImg {
   width: 100%;
+  height: 355px;
   margin-bottom: 32px;
   border-radius: 12px;
 }
@@ -65,12 +67,20 @@
   }
 }
 .offerItemIcon {
+  fill: none;
   position: absolute;
   right: 0;
   top: 0;
   width: 40px;
   height: 40px;
   padding: 6px;
+  stroke: #100f0f;
+}
+
+.offerItemIcon:hover,
+.offerItemIcon:focus {
+  fill: #f880c8;
+  stroke: #f880c8;
 }
 
 .offerItemTitle {

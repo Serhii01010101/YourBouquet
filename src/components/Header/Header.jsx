@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
 import { ROUTES } from '../../utils/routes';
 
@@ -6,19 +6,33 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.headerNavigation}>
-        <Link to={ROUTES.HOME} className={styles.headerLogo}>
+        <NavLink to={ROUTES.HOME} className={styles.headerLogo}>
           YourBouquet
-        </Link>
+        </NavLink>
         <ul className={styles.headerMenu}>
           <li className={styles.headerMenuItem}>
-            <Link to="/" className={styles.headerMenuLink}>
+            <NavLink
+              to={ROUTES.SpecialOffer}
+              className={({ isActive }) =>
+                `${styles.headerMenuLink} ${
+                  isActive ? styles.headerMenuActive : ''
+                }`
+              }
+            >
               Special offer
-            </Link>
+            </NavLink>
           </li>
           <li className={styles.headerMenuItem}>
-            <Link to={ROUTES.CATALOG} className={styles.headerMenuLink}>
+            <NavLink
+              to={ROUTES.CATALOG}
+              className={({ isActive }) =>
+                `${styles.headerMenuLink} ${
+                  isActive ? styles.headerMenuActive : ''
+                }`
+              }
+            >
               Catalog
-            </Link>
+            </NavLink>
           </li>
           <li className={styles.headerMenuItem}>
             <Link to="/" className={styles.headerMenuLink}>
@@ -26,7 +40,7 @@ const Header = () => {
             </Link>
           </li>
           <li className={styles.headerMenuItem}>
-            <Link to="/" className={styles.headerMenuLink}>
+            <Link to="#contacts" className={styles.headerMenuLink}>
               Contacts
             </Link>
           </li>

@@ -52,7 +52,21 @@
 }
 
 .headerMenuLink {
-  color: #000;
+  color: #100f0f;
+  transition: all 0.3s;
+}
+
+.headerMenuLink:hover {
+  color: #f880c8;
+}
+
+.headerMenuLink:focus {
+}
+
+.headerMenuActive {
+  font-size: 18px;
+  font-weight: 700;
+  color: #100f0f;
 }
 
 .headerBox {
@@ -103,8 +117,16 @@
 }
 
 .icon {
-  width: 26px;
-  height: 26px;
+  width: 32px;
+  height: 32px;
+  fill: none;
+  stroke: #100f0f;
+}
+
+.icon:hover,
+.icon:focus {
+  fill: #f880c8;
+  stroke: #f880c8;
 }
 
 .btnLogin {

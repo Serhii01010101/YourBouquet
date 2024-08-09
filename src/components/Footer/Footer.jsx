@@ -49,7 +49,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <address className={styles.footerAddress}>
+        <address className={styles.footerAddress} id="contacts">
           <p className={styles.footerAddressHead}>Contact us</p>
 
           <ul className={styles.footerAddressList}>

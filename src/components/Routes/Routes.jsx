@@ -1,9 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
-import Home from '../Home/Home';
+
+import HomePage from '../../pages/HomePage';
+import CatalogPage from '../../pages/CatalogPage';
+import { ROUTES } from '../../utils/routes';
 
 const AppRoutes = () => (
   <Routes>
-    <Route index element={<Home />} />
+    <Route path={ROUTES.HOME} element={<HomePage />} />
+    <Route path={ROUTES.CATALOG} element={<CatalogPage />} />
   </Routes>
 );
 
