@@ -67,14 +67,14 @@
   }
 }
 .offerItemIcon {
-  fill: none;
+  fill: rgba(253, 253, 253, 0.7);
+  stroke: #ffffff;
   position: absolute;
   right: 0;
   top: 0;
   width: 40px;
   height: 40px;
   padding: 6px;
-  stroke: #100f0f;
 }
 
 .offerItemIcon:hover,

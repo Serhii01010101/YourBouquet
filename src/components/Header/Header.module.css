@@ -76,6 +76,7 @@
 .header .searchForm {
   display: flex;
   align-items: center;
+
   gap: 14px;
   padding: 2px 12px;
   border-radius: 12px;
@@ -105,6 +106,7 @@
 
 .iconBox {
   display: flex;
+
   align-items: center;
   gap: 12px;
   margin-right: 44px;

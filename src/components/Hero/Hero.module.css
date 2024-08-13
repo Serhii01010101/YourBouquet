@@ -1,6 +1,10 @@
 .hero {
   /* width: 1440px; */
-  background-image: url(../../../public/catalogSpecial.jpg);
+  background-image: linear-gradient(
+      rgba(56, 48, 56, 0.3),
+      rgba(56, 48, 56, 0.3)
+    ),
+    url(../../../public/catalogSpecial.jpg);
   background-size: cover;
   padding-top: 297px;
   padding-bottom: 100px;

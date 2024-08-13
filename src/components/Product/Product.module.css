@@ -1,0 +1,109 @@
+.product {
+  color: #100f0f;
+  font-family: 'Open Sans Hebrew';
+  width: 1440px;
+  margin: 0 auto;
+  padding: 26px 100px 26px 100px;
+  display: flex;
+  gap: 44px;
+}
+
+.productImg {
+}
+
+.title {
+  font-family: 'Open Sans Hebrew';
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.text {
+  font-family: 'Open Sans Hebrew';
+  font-weight: 400;
+  font-size: 14px;
+  width: 434px;
+  margin-bottom: 12px;
+}
+
+.textSpan {
+  font-family: 'Open Sans Hebrew';
+  color: #828282;
+  font-weight: 400;
+
+  font-size: 14px;
+  margin-bottom: 44px;
+}
+
+.subTitleQuantity {
+  font-family: 'Open Sans Hebrew';
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+
+.subTitle {
+  font-family: 'Open Sans Hebrew';
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.button {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #100f0f;
+  width: 432px;
+  height: 50px;
+  color: #282828;
+  background-color: #fff;
+
+  font-family: 'Open Sans Hebrew';
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.accentButton {
+  padding: 14px;
+  border-radius: 12px;
+  width: 434px;
+  height: 50px;
+
+  font-family: 'Open Sans Hebrew';
+  font-size: 18px;
+
+  font-weight: 700;
+  background-color: #f880c8;
+  border: 0;
+  color: #fff;
+  color: var(--Text-Colors-White, #fcfcfc);
+}
+
+.info {
+  display: flex;
+  margin-top: 44px;
+  justify-content: space-between;
+}
+
+.infoItem {
+  display: flex;
+  padding: 10px 0px;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.infoText {
+  font-family: 'Open Sans Hebrew';
+  font-size: 16px;
+  margin: 0;
+  font-weight: 400;
+}
