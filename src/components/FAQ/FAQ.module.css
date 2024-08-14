@@ -42,6 +42,10 @@
 }
 
 .FAQItem {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
@@ -70,13 +74,20 @@
 
 .FAQItemText {
   margin-top: 10px;
-  font-size: 1em;
-  display: none;
+  margin-bottom: 0;
+  font-size: 16px;
+  padding-right: 90px;
+
+  /* display: none; */
 }
 
 .FAQIcon {
-  width: 20px;
-  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 44px;
+  height: 40px;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -87,11 +98,10 @@
   }
 }
 
-/* Active state */
-.FAQItem.active .FAQItemText {
-  display: block;
+.FAQItem .FAQItemText {
+  display: none; /* Скрываем текст по умолчанию */
 }
 
-.FAQItem.active .FAQIcon use {
-  href: '../../../public/icons.svg#icon-accordeon-statusPlus';
+.FAQItem.active .FAQItemText {
+  display: block; /* Показываем текст при активности */
 }

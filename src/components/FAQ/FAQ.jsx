@@ -1,4 +1,5 @@
 import styles from './FAQ.module.css';
+<script src="../../js/header-button.js"></script>;
 
 const FAQ = () => {
   return (
@@ -15,7 +16,7 @@ const FAQ = () => {
             classic bouquets and exclusive arrangements to suit any taste.
           </p>
           <svg className={styles.FAQIcon}>
-            <use href="/../../public/icons.svg#icon-minus"></use>
+            <use href="/../../public/icons.svg#icon-plus"></use>
           </svg>
         </li>
         <li className={styles.FAQItem}>
@@ -28,7 +29,7 @@ const FAQ = () => {
             classic bouquets and exclusive arrangements to suit any taste.
           </p>
           <svg className={styles.FAQIcon}>
-            <use href="/../../public/icons.svg#icon-minus"></use>
+            <use href="/../../public/icons.svg#icon-plus"></use>
           </svg>
         </li>
         <li className={styles.FAQItem}>
@@ -41,7 +42,7 @@ const FAQ = () => {
             classic bouquets and exclusive arrangements to suit any taste.
           </p>
           <svg className={styles.FAQIcon}>
-            <use href="/../../public/icons.svg#icon-minus"></use>
+            <use href="/../../public/icons.svg#icon-plus"></use>
           </svg>
         </li>
       </ul>
