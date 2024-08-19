@@ -8,7 +8,9 @@ export const App = () => {
   return (
     <div className={styles.appContainer}>
       <Header />
-      <AppRoutes />
+      <main>
+        <AppRoutes />
+      </main>
       <Footer />
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import styles from './FAQ.module.css';
 
@@ -18,13 +18,13 @@ const FAQItem = ({ question, answer }) => {
           {isOpen ? (
             <>
               <svg className={styles.FAQIcon}>
-                <use href="./../public/icons.svg#icon-minus"></use>
+                <use href="./public/icons.svg#icon-minus"></use>
               </svg>
               <p className={styles.FAQItemText}>{answer}</p>
             </>
           ) : (
             <svg className={styles.FAQIcon}>
-              <use href="./../public/icons.svg#icon-plus"></use>
+              <use href="./public/icons.svg#icon-plus"></use>
             </svg>
           )}
         </li>
@@ -51,7 +51,7 @@ const FAQItem = ({ question, answer }) => {
             classic bouquets and exclusive arrangements to suit any taste.
           </p>
           <svg className={styles.FAQIcon}>
-            <use href="./public/icons.svg#icon-plus"></use>
+            <use href="./../public/icons.svg#icon-plus"></use>
           </svg>
         </li>
       </ul>
@@ -59,7 +59,7 @@ const FAQItem = ({ question, answer }) => {
   );
 };
 
-const FAQList = () => {
+const FAQ = () => {
   const faqs = [
     {
       index: 1,
@@ -71,7 +71,6 @@ const FAQList = () => {
 
   return (
     <div className="faq-container">
-      <h2>FAQ</h2>
       {faqs.map((faq) => (
         <FAQItem
           key={faq.indexndex}
@@ -83,4 +82,4 @@ const FAQList = () => {
   );
 };
 
-export default FAQList;
+export default FAQ;
