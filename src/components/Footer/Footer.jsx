@@ -109,6 +109,9 @@ const Footer = () => {
             </a>
           </li>
         </ul>
+        <div className={styles.nameBrand}>
+          <p className={styles.nameBrandText}>YourBouquet, 2024</p>
+        </div>
       </div>
     </footer>
   );
