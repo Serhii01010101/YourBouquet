@@ -14,7 +14,20 @@
   gap: 35px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .header {
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    padding-right: 25px;
+    align-items: center;
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .header {
     display: block;
     flex-direction: column;
@@ -44,7 +57,13 @@
   border-radius: 50%;
   margin-right: 128px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .headerLogo {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .headerLogo {
     margin-right: 0;
   }
@@ -56,6 +75,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .headerMenu {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .headerMenu {
     display: none;
   }
@@ -92,6 +117,12 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .headerBox {
+    display: none;
+  }
+}
+
 .header .searchForm {
   display: flex;
   align-items: center;
@@ -105,6 +136,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header .searchForm {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .header .searchForm {
     display: none;
   }
@@ -181,10 +218,24 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .headerMobileBox {
     display: flex;
     gap: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .headerMobileBox {
+    display: flex;
+    gap: 27px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .icon {
+    width: 43px;
+    height: 43px;
   }
 }
 

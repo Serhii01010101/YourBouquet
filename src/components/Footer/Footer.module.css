@@ -6,7 +6,7 @@
   background-color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer {
     display: flex;
     gap: 16px;
@@ -16,13 +16,30 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    /* display: flex;
+    gap: 16px;
+    flex-direction: column; */
+    width: 100%;
+    padding: 80px 20px;
+  }
+}
+
 .footerNavigation {
   display: flex;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footerNavigation {
     margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerNavigation {
+    display: flex;
+    width: 66%;
+    justify-content: space-between;
   }
 }
 
@@ -33,12 +50,26 @@
   margin-right: 291px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footerContainerInfo {
     gap: 16px;
     margin: 0 auto;
     text-align: center;
     padding: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerContainerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    /* margin-right: 182px; */
+    margin-right: 0;
+  }
+  .rightsItem:last-child {
+    display: none;
   }
 }
 
@@ -48,11 +79,20 @@
   gap: 24px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerMenu {
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    justify-content: space-between;
+  }
+}
+
 .footerMenuItem {
   display: flex;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footerMenuItem {
     margin: 0 auto;
     gap: 16px;
@@ -66,6 +106,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .rightsLink {
+    font-size: 16px;
+    white-space: nowrap;
+  }
 }
 
 .rightsList {
@@ -84,7 +131,7 @@
 .footerAddress {
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footerAddress {
     display: none;
   }
@@ -98,11 +145,27 @@
   margin-bottom: 24px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerAddressHead {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
 .footerAddressList {
   display: flex;
   flex-direction: column;
   gap: 24px;
   margin-bottom: 32px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerAddressList {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
 }
 
 .footerAddressItem {
@@ -111,6 +174,13 @@
 .footerAddressLink {
   color: #000;
   font-style: normal;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerAddressLink {
+    font-size: 12px;
+    gap: 24px;
+  }
 }
 
 .footerLogo {
@@ -126,7 +196,15 @@
   padding: 12px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .footerLogo {
+    width: 84px;
+    height: 84px;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .footerLogo {
     width: 84px;
     height: 84px;
@@ -138,6 +216,12 @@
   display: flex;
   gap: 24px;
   justify-content: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerSocialsList {
+    display: flex;
+  }
 }
 
 .footerSocialsItem {
@@ -153,7 +237,14 @@
   fill: none;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerSocialsIcon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .footerSocialsIcon {
     width: 32px;
     height: 32px;
@@ -168,9 +259,32 @@
   padding: 12px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .logoSocialContainer {
     margin: 0 auto;
     padding-top: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logoSocialContainer {
+    align-items: center;
+    padding: 0;
+    justify-content: space-between;
+  }
+}
+
+.nameBrand {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nameBrand {
+    display: flex;
+    font-size: 12px;
+    margin: 0;
+  }
+  .nameBrandText {
+    margin: 0;
   }
 }

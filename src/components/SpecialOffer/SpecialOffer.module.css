@@ -6,10 +6,17 @@
   background-color: #f9f9f9;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .offer {
     width: 100%;
     padding: 68px 20px 68px 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .offer {
+    width: 100%;
+    padding: 80px 20px 136px 20px;
   }
 }
 
