@@ -58,7 +58,8 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .FAQList {
-    margin: 0;
+    width: 100%;
+    margin: 0 auto;
     background-color: #f9f9f9;
     padding: 0;
   }
@@ -76,6 +77,8 @@
 
 @media screen and (max-width: 767px) {
   .FAQItem {
+    max-width: 390px;
+    margin: 0 auto;
     display: flex;
     align-items: stretch;
   }
@@ -83,7 +86,8 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .FAQItem {
-    margin: 0;
+    max-width: 468px;
+    margin: 0 auto;
     padding: 16px 0;
     display: flex;
     align-items: stretch;
@@ -101,6 +105,7 @@
 
 @media screen and (max-width: 767px) {
   .FAQItemTitle {
+    width: 70%;
     font-size: 16px;
   }
 }
@@ -108,7 +113,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .FAQItemTitle {
     margin: 0;
-    width: 319px;
+    width: 70%;
     font-size: 18px;
   }
 }
