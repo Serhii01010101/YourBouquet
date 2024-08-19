@@ -88,6 +88,7 @@
   width: 44px;
   height: 40px;
   margin-left: auto;
+  fill: #f880c8;
 }
 
 @media screen and (max-width: 768px) {

@@ -18,7 +18,7 @@ const FAQItem = ({ question, answer }) => {
           {isOpen ? (
             <>
               <svg className={styles.FAQIcon}>
-                <use href="./public/icons.svg#icon-minus"></use>
+                <use href="/public/icons.svg#icon-minus"></use>
               </svg>
               <p className={styles.FAQItemText}>{answer}</p>
             </>
@@ -30,7 +30,7 @@ const FAQItem = ({ question, answer }) => {
         </li>
         <li className={styles.FAQItem}>
           <h3 className={styles.FAQItemTitle}>
-            What types of flowers can I order on your website?
+           ТУТ МАЄ СПРАЦЮВАТИ!!!! What types of flowers can I order on your website?
           </h3>
           <p className={styles.FAQItemText}>
             On our website, you can order a variety of flowers, including roses,
@@ -38,7 +38,7 @@ const FAQItem = ({ question, answer }) => {
             classic bouquets and exclusive arrangements to suit any taste.
           </p>
           <svg className={styles.FAQIcon}>
-            <use href="../../../public/icons.svg#icon-plus"></use>
+            <use href="/public/icons.svg#icon-plus"></use>
           </svg>
         </li>
         <li className={styles.FAQItem}>
