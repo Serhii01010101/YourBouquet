@@ -99,7 +99,7 @@
 }
 
 .FAQItem .FAQItemText {
-  display: none; /* Скрываем текст по умолчанию */
+  /* display: none;  */
 }
 
 .FAQItem.active .FAQItemText {
