@@ -38,10 +38,11 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .footerNavigation {
     display: flex;
-    width: 66%;
+    width: 57%;
     justify-content: space-between;
   }
 }
+/* df */
 
 .footerContainerInfo {
   display: flex;
