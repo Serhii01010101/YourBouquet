@@ -212,6 +212,15 @@
   border: 1px solid #000;
   background-color: #fff;
   border-radius: 20px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.btnLogin:hover,
+.btnLogin:focus {
+  color: #fff;
+  background: #282828;
 }
 
 .headerMobileBox {

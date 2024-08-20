@@ -67,6 +67,9 @@
   border-radius: 12px;
   overflow: hidden;
 }
+.catalogItem:hover img {
+  transform: scale(1.1); /* Увеличение изображения на 10% */
+}
 
 @media screen and (max-width: 767px) {
   .catalogItem {
@@ -95,6 +98,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transition: transform 0.4s ease;
 }
 
 .catalogItemTitle {
@@ -110,6 +114,11 @@
   color: #ffffff;
   text-align: center;
   white-space: nowrap;
+  transition: font-weight 0.4s ease;
+}
+
+.catalogItem:hover h3 {
+  font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {

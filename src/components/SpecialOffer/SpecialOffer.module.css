@@ -141,12 +141,24 @@
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  background: var(--Elements-Colors-Hot-Pink, #f880c8);
+  background-color: #fff;
+  /* background: var(--Elements-Colors-Hot-Pink, #f880c8); */
   border: 0;
-  color: #fff;
-
+  color: #f880c8;
+  border: 2px solid #f880c8;
+  box-sizing: border-box;
   font-weight: 700;
   line-height: normal;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.offerItemBtn:hover,
+.offerItemBtn:focus {
+  background-color: #f880c8;
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
