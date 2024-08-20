@@ -60,7 +60,8 @@
   .FAQList {
     display: flex;
     margin: 0 auto;
-    width: 468px;
+    max-width: 468px;
+    width: 100%;
     align-items: stretch;
     background-color: #f9f9f9;
     padding: 0;

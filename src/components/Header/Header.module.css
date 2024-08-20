@@ -95,6 +95,8 @@
 }
 
 .headerMenuLink:hover {
+  font-size: 18px;
+  font-weight: 700;
   color: #f880c8;
 }
 
@@ -104,7 +106,7 @@
 .headerMenuActive {
   font-size: 18px;
   font-weight: 700;
-  color: #100f0f;
+  color: #f880c8;
 }
 
 .headerBox {

@@ -43,7 +43,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Company name, 2024
+                YourBouquet, 2024
               </a>
             </li>
           </ul>
