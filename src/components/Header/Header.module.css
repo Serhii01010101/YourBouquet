@@ -71,7 +71,9 @@
 
 .headerMenu {
   display: flex;
-  gap: 44px;
+  /* gap: 44px; */
+  justify-content: space-between;
+  width: 498px;
 }
 
 @media screen and (max-width: 768px) {
@@ -87,15 +89,22 @@
 }
 
 .headerMenuItem {
+ 
+  
 }
 
 .headerMenuLink {
+  display: inline-block;
+ 
   color: #100f0f;
   transition: all 0.3s;
+
+ 
 }
 
 .headerMenuLink:hover {
-  font-size: 18px;
+ 
+  font-size: 18px; 
   font-weight: 700;
   color: #f880c8;
 }
