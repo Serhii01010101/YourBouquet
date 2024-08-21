@@ -120,6 +120,7 @@
 
 .headerBox {
   display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -137,7 +138,7 @@
 .header .searchForm {
   display: flex;
   align-items: center;
-
+height: 32px;
   position: relative;
   gap: 14px;
   padding: 2px 12px;
@@ -172,7 +173,7 @@
 
 .searchFormBtn .icon {
   position: absolute;
-  top: -13px;
+  top: -12px;
   right: -4px;
 }
 
