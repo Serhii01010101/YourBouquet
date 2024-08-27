@@ -18,10 +18,16 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .hero {
     width: 100%;
     padding: 221px 40px 220px 40px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .hero {
+    padding: 190px 80px 100px 80px;
   }
 }
 
@@ -42,7 +48,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .heroTitle {
     font-size: 72px;
   }
@@ -52,7 +58,6 @@
   color: var(--Text-Colors-White, #fff);
   text-align: center;
   font-size: 24px;
-
   margin-bottom: 54px;
 }
 
@@ -64,12 +69,17 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .heroText {
     font-size: 24px;
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .heroText {
+    margin-bottom: 80px;
+  }
+}
 .heroText {
 }
 
@@ -87,7 +97,12 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .heroButtons {
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
   .heroButtons {
   }
 }

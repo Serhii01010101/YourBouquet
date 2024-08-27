@@ -1,5 +1,5 @@
 .chooseUs {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 80px 212px;
 }
@@ -18,12 +18,17 @@
   }
 }
 
-@media screen and (max-width: 396px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .chooseUs {
     padding: 68px 20px;
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .chooseUs {
+    padding: 100px 80px;
+  }
+}
 .chooseUsTitle {
   color: var(--Elements-Colors-Black, var(--Black-282828, #282828));
   text-align: center;
@@ -40,7 +45,13 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .chooseUsTitle {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
   .chooseUsTitle {
     margin-bottom: 40px;
   }
@@ -52,10 +63,26 @@
   justify-content: space-between;
   row-gap: 32px;
 }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+  @media screen and (max-width: 768px) {
   .chooseUsList {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+=======
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+.chooseUsList {
     flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .chooseUsList {
+    padding-top: 100px;
+    gap: 16px;
   }
 }
 
@@ -73,7 +100,13 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .chooseUsItem {
+    width: calc((100% - 132px * 1) / 4);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
   .chooseUsItem {
     width: calc((100% - 132px * 1) / 4);
   }
@@ -91,10 +124,17 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .chooseUsItemIcon {
     width: 60px;
     height: 60px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .chooseUsItemIcon {
+    width: 64px;
+    height: 64px;
   }
 }
 
@@ -110,5 +150,12 @@
 @media screen and (max-width: 767px) {
   .chooseUsItemTitle {
     font-size: 14px;
+  }}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .chooseUsItemTitle {
+    font-size: 24px;
   }
+}
+=======
 }

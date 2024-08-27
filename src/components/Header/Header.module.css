@@ -1,5 +1,7 @@
 .header {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   margin: 0 auto;
   display: flex;
   padding: 26px 106px 26px 126px;
@@ -14,7 +16,25 @@
   gap: 35px;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mainContainer {
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    padding-right: 25px;
+    align-items: center;
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
   .header {
     display: block;
     flex-direction: column;
@@ -27,17 +47,19 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   .header {
-    display: block;
-    flex-direction: column;
-    justify-content: space-between;
     width: 100%;
-    padding: 20px;
-    padding-right: 25px;
-    align-items: center;
-    position: relative;
+    max-width: 1439px;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px 80px;
+    align-items: baseline;
+    justify-content: center;
   }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
 }
 
 .headerNavigation {
@@ -64,9 +86,17 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .headerLogo {
     margin-right: 0;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .headerLogo {
+    width: 90px;
+    height: 90px;
+    margin-right: 52px;
+    font-size: 13px;
   }
 }
 
@@ -83,21 +113,44 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .headerMenu {
     display: none;
   }
 }
 
-.headerMenuItem {}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .headerMenu {
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    width: 359px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .headerMenuItem {
+    /* padding: 14px 8px; */
+  }
+}
+
+.headerMenuItem {
+}
 
 .headerMenuLink {
   display: inline-block;
 
   color: #100f0f;
   transition: all 0.3s;
+}
 
-
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .headerMenuLink {
+    padding: 14px 8px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
 }
 
 .headerMenuLink:hover {
@@ -108,6 +161,15 @@
 }
 
 .headerMenuLink:focus {}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .headerMenuLink:hover,
+  .headerMenuLink:focus {
+    font-size: 14px;
+    font-weight: 700;
+    color: #f880c8;
+  }
+}
 
 .headerMenuActive {
   font-size: 18px;
@@ -126,7 +188,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .headerBox {
     display: none;
   }
@@ -150,16 +212,32 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .header .searchForm {
     display: none;
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .header .searchForm {
+    width: 142px;
+    height: 36px;
+    box-sizing: border-box;
+    margin-right: 32px;
+  }
+}
+
 .searchFormInput {
+  width: 100%;
   font-size: 12px;
   font-family: 'Manrope';
   border: 0;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .searchFormInput {
+    width: 100%;
+  }
 }
 
 .searchFormBtn {
@@ -204,7 +282,13 @@
   margin-right: 44px;
 }
 
-@media screen and (max-width: 767px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .iconBox {
+    margin-right: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .iconBox {
     display: none;
   }
@@ -215,6 +299,16 @@
   height: 32px;
   fill: none;
   stroke: #100f0f;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .iconBox {
+    gap: 6px;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .icon:hover,
@@ -245,6 +339,14 @@
   background: #282828;
 }
 
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .btnLogin {
+    width: 85px;
+    padding: 8px;
+    font-size: 16px;
+  }
+}
+
 .headerMobileBox {
   display: none;
 }
@@ -256,14 +358,14 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .headerMobileBox {
     display: flex;
     gap: 27px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .icon {
     width: 43px;
     height: 43px;
