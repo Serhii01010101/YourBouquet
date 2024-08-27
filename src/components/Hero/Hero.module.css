@@ -11,6 +11,7 @@
 
 .heroContainer {
   max-width: 1440px;
+  /* width: 100%; */
   padding-top: 297px;
   padding-bottom: 100px;
   margin: 0 auto;

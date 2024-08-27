@@ -3,6 +3,7 @@
 }
 .catalogContainer {
   max-width: 1440px;
+  /* width: 100%; */
   padding: 240px 80px 0 80px;
   margin: 0 auto;
 }
@@ -56,17 +57,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 767px) {
   .catalogList {
-    justify-content: space-around;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .catalogList {
-    justify-content: space-around;
   }
 }
 

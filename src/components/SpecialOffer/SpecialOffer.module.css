@@ -4,8 +4,9 @@
 
 .offerContainer {
   max-width: 1440px;
+  /* width: 100%; */
   margin: 0 auto;
-  padding: 100px 80px;
+  padding: 100px 80px 200px 80px;
   position: relative;
 }
 
@@ -29,13 +30,18 @@
 
 .offerTitle {
   color: var(--Elements-Colors-Black, #282828);
-  text-align: center;
-
+  /* text-align: center; */
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 80px;
+  display: inline-block;
+  background-color: #fff;
+  padding: 16px 80px;
+  border-radius: 0px 20px 20px 0px;
+  background: var(--Text-Colors-White, #fcfcfc);
+  box-shadow: 0px 4px 9.6px 0px rgba(223, 223, 223, 0.16);
 }
 
 @media screen and (max-width: 768px) {

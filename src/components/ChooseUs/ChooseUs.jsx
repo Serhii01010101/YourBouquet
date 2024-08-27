@@ -3,8 +3,10 @@ import styles from './ChooseUs.module.css';
 const ChooseUs = () => {
   return (
     <section className={styles.chooseUs}>
-      <div className={styles.chooseUsContainer}>
+      <div className={styles.chooseUSTitleContainer}>
         <h2 className={styles.chooseUsTitle}>Why choose us?</h2>
+      </div>
+      <div className={styles.chooseUsContainer}>
         <ul className={styles.chooseUsList}>
           <li className={styles.chooseUsItem}>
             <svg className={styles.chooseUsItemIcon}>
