@@ -1,26 +1,28 @@
 .offer {
+  background-color: #f9f9f9;
+}
+
+.offerContainer {
   max-width: 1440px;
   margin: 0 auto;
   padding: 100px 80px;
   position: relative;
-  background-color: #f9f9f9;
 }
 
 @media screen and (max-width: 767px) {
-  .offer {
-
+  .offerContainer {
     padding: 68px 20px 68px 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .offer {
+  .offerContainer {
     padding: 80px 20px 136px 20px;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
-  .offer {
+  .offerContainer {
     padding: 100px 80px;
   }
 }
@@ -51,7 +53,6 @@
 
 @media screen and (max-width: 768px) {
   .offerList {
-
     flex-wrap: wrap;
   }
 }
@@ -76,8 +77,8 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
-  .offeritem{
+@media (min-width: 768px) and (max-width: 1023px) {
+  .offeritem {
     width: calc((100% - 20px) / 4);
   }
 }

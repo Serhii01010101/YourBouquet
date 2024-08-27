@@ -1,24 +1,26 @@
 .catalog {
+  background-color: #f9f9f9;
+}
+.catalogContainer {
   max-width: 1440px;
   padding: 240px 80px 0 80px;
   margin: 0 auto;
-  background-color: #f9f9f9;
 }
 
 @media screen and (max-width: 767px) {
-  .catalog {
+  .catalogContainer {
     padding: 68px 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .catalog {
+  .catalogContainer {
     padding: 80px 20px;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
-  .catalog {
+  .catalogContainer {
     padding: 100px 80px;
   }
 }
@@ -54,7 +56,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-
 }
 
 @media screen and (max-width: 767px) {
