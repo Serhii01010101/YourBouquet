@@ -1,4 +1,7 @@
 .chooseUs {
+}
+
+.chooseUsContainer {
   max-width: 1440px;
   margin: 0 auto;
   padding: 80px 212px;
@@ -63,18 +66,15 @@
   justify-content: space-between;
   row-gap: 32px;
 }
-  
-  @media screen and (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
   .chooseUsList {
     flex-wrap: wrap;
   }
 }
 
-
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  
-.chooseUsList {
+  .chooseUsList {
     flex-wrap: nowrap;
   }
 }
@@ -150,11 +150,11 @@
 @media screen and (max-width: 767px) {
   .chooseUsItemTitle {
     font-size: 14px;
-  }}
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .chooseUsItemTitle {
     font-size: 24px;
   }
 }
-
