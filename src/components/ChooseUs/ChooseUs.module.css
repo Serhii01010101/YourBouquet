@@ -6,14 +6,12 @@
 
 @media screen and (max-width: 767px) {
   .chooseUs {
-    width: 100%;
     padding: 68px 100px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .chooseUs {
-    width: 100%;
     padding: 80px 20px;
   }
 }
@@ -58,6 +56,8 @@
 }
 
 .chooseUsList {
+  max-width: 1015px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -70,8 +70,8 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-=======
+
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   
 .chooseUsList {
@@ -157,5 +157,4 @@
     font-size: 24px;
   }
 }
-=======
-}
+

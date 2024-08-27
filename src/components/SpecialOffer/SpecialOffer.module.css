@@ -1,5 +1,5 @@
 .offer {
-  /* width: 1440px; */
+  max-width: 1440px;
   margin: 0 auto;
   padding: 100px 80px;
   position: relative;
@@ -8,14 +8,13 @@
 
 @media screen and (max-width: 767px) {
   .offer {
-    width: 100%;
+
     padding: 68px 20px 68px 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .offer {
-    width: 100%;
     padding: 80px 20px 136px 20px;
   }
 }
@@ -52,6 +51,7 @@
 
 @media screen and (max-width: 768px) {
   .offerList {
+
     flex-wrap: wrap;
   }
 }
@@ -73,6 +73,12 @@
 @media screen and (max-width: 768px) {
   .offerItem {
     width: calc((100% - 20px) / 2);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .offeritem{
+    width: calc((100% - 20px) / 4);
   }
 }
 
@@ -151,7 +157,7 @@
   display: flex;
   margin: 0 auto;
   margin-top: 20px;
-  width: 305px;
+  width: 100%;
   padding: 14px;
   justify-content: center;
   align-items: center;
@@ -162,6 +168,7 @@
   color: #f880c8;
   border: 2px solid #f880c8;
   box-sizing: border-box;
+  font-size: 18px;
   font-weight: 700;
   line-height: normal;
   transition:
@@ -180,6 +187,7 @@
   .offerItemBtn {
     width: 100%;
     margin-top: 14px;
+    font-size: 16px;
   }
 }
 
