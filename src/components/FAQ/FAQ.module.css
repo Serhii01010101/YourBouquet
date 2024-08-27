@@ -12,9 +12,15 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .FAQ {
     padding: 80px 150px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .FAQ {
+    padding: 100px 80px;
   }
 }
 
@@ -32,9 +38,15 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .FAQTitle {
     font-size: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .FAQTitle {
     margin-bottom: 40px;
   }
 }
@@ -56,11 +68,23 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .FAQList {
     display: flex;
     margin: 0 auto;
     max-width: 468px;
+    width: 100%;
+    align-items: stretch;
+    background-color: #f9f9f9;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .FAQList {
+    display: flex;
+    margin: 0 auto;
+    max-width: 650px;
     width: 100%;
     align-items: stretch;
     background-color: #f9f9f9;
@@ -85,10 +109,19 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .FAQItem {
     max-width: 468px;
     padding: 16px 0;
+    display: flex;
+    align-items: stretch;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .FAQItem {
+    max-width: 650px;
+    padding: 24px 0;
     display: flex;
     align-items: stretch;
   }
@@ -110,7 +143,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .FAQItemTitle {
     margin: 0;
     width: 70%;
@@ -134,7 +167,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .FAQItemText {
     padding: 0;
     width: 100%;
@@ -159,7 +192,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .FAQIcon {
     top: 17px;
   }

@@ -1,5 +1,5 @@
 .catalog {
-  width: 1444px;
+  max-width: 1440px;
   padding: 240px 80px 0 80px;
   margin: 0 auto;
   background-color: #f9f9f9;
@@ -12,10 +12,16 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .catalog {
     max-width: 100%;
     padding: 80px 20px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .catalog {
+    padding: 100px 80px;
   }
 }
 
@@ -34,9 +40,15 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .catalogTitle {
     font-size: 32px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .catalogTitle {
     margin-bottom: 40px;
   }
 }
@@ -53,9 +65,14 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .catalogList {
     justify-content: space-around;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .catalogList {
   }
 }
 
@@ -78,10 +95,17 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .catalogItem {
     width: calc(50% - 20px);
     height: 354px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .catalogItem {
+    width: calc(50% - 20px);
+    height: 300px;
   }
 }
 
