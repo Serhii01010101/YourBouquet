@@ -7,22 +7,20 @@
 @media screen and (max-width: 767px) {
   .chooseUs {
     width: 100%;
-    /* padding: 68px 0 68px 0; */
-    padding: 68px 100px 68px 100px;
+    padding: 68px 100px;
   }
 }
 
-@media screen and (max-width: 396px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .chooseUs {
     width: 100%;
-    padding: 68px 20px 68px 20px;
+    padding: 80px 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .chooseUs {
-    width: 100%;
-    padding: 80px 20px 80px 20px;
+    padding: 68px 20px;
   }
 }
 
@@ -49,7 +47,6 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .chooseUsTitle {
-    font-size: 32px;
     margin-bottom: 40px;
   }
 }
@@ -66,15 +63,18 @@
   justify-content: space-between;
   row-gap: 32px;
 }
-
-@media screen and (max-width: 768px) {
+  
+  @media screen and (max-width: 768px) {
   .chooseUsList {
     flex-wrap: wrap;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .chooseUsList {
+=======
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+.chooseUsList {
     flex-wrap: nowrap;
   }
 }
@@ -150,11 +150,12 @@
 @media screen and (max-width: 767px) {
   .chooseUsItemTitle {
     font-size: 14px;
-  }
-}
+  }}
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .chooseUsItemTitle {
     font-size: 24px;
   }
+}
+=======
 }

@@ -1,4 +1,5 @@
 .catalog {
+
   max-width: 1440px;
   padding: 240px 80px 0 80px;
   margin: 0 auto;
@@ -42,7 +43,6 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .catalogTitle {
-    font-size: 32px;
     margin-bottom: 40px;
   }
 }
@@ -57,6 +57,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+
 }
 
 @media screen and (max-width: 767px) {
@@ -80,12 +81,13 @@
   position: relative;
   width: calc(33.333% - 20px);
   height: 445px;
-  border: 0px solid;
   border-radius: 12px;
   overflow: hidden;
 }
+
 .catalogItem:hover img {
-  transform: scale(1.1); /* Увеличение изображения на 10% */
+  transform: scale(1.1);
+  /* Увеличение изображения на 10% */
 }
 
 @media screen and (max-width: 767px) {
@@ -128,9 +130,7 @@
 .catalogItemTitle {
   font-family: 'Open Sans', sans-serif;
   font-size: 32px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -148,7 +148,6 @@
 @media screen and (max-width: 768px) {
   .catalogItemTitle {
     font-size: 24px;
-    text-align: center;
     white-space: wrap;
   }
 }
