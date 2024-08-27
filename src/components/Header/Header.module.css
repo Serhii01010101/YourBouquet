@@ -57,6 +57,7 @@
   border-radius: 50%;
   margin-right: 128px;
 }
+
 @media screen and (max-width: 767px) {
   .headerLogo {
     margin-right: 0;
@@ -76,7 +77,7 @@
   width: 498px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .headerMenu {
     display: none;
   }
@@ -88,29 +89,25 @@
   }
 }
 
-.headerMenuItem {
- 
-  
-}
+.headerMenuItem {}
 
 .headerMenuLink {
   display: inline-block;
- 
+
   color: #100f0f;
   transition: all 0.3s;
 
- 
+
 }
 
 .headerMenuLink:hover {
- 
-  font-size: 18px; 
+
+  font-size: 18px;
   font-weight: 700;
   color: #f880c8;
 }
 
-.headerMenuLink:focus {
-}
+.headerMenuLink:focus {}
 
 .headerMenuActive {
   font-size: 18px;
@@ -120,9 +117,10 @@
 
 .headerBox {
   display: flex;
+  align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .headerBox {
     display: none;
   }
@@ -137,7 +135,7 @@
 .header .searchForm {
   display: flex;
   align-items: center;
-
+  height: 32px;
   position: relative;
   gap: 14px;
   padding: 2px 12px;
@@ -146,7 +144,7 @@
   margin-right: 24px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header .searchForm {
     display: none;
   }
@@ -172,18 +170,31 @@
 
 .searchFormBtn .icon {
   position: absolute;
-  top: -13px;
+  top: -12px;
   right: -4px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .searchMobileForm .searchFormInput {
     padding: 10px 12px 10px 12px;
   }
+   
 }
 
-.iconBtn {
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .searchMobileForm .searchFormInput {
+      padding: 10px 12px 10px 12px;
+    }
+  .searchFormBtn .icon {
+      position: absolute;
+      top: -15px;
+      right: -15px;
+    }
 }
+
+
+.iconBtn {}
 
 .iconBox {
   display: flex;
@@ -193,7 +204,7 @@
   margin-right: 44px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .iconBox {
     display: none;
   }
@@ -263,7 +274,7 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .mobileNavigator.open {
     width: 100%;
     display: flex;
@@ -288,7 +299,7 @@
   transform: translateY(-100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .headerMobileMenu {
     display: flex;
     flex-direction: column;
@@ -297,13 +308,13 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .headerMobileMenuItem {
     padding: 10px 0 10px 0;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .searchMobileForm {
     display: flex;
     width: 224px;
@@ -317,7 +328,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .toggleMobileMenu {
     border: none;
   }
