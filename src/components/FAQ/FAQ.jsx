@@ -52,16 +52,18 @@ const FAQ = () => {
 
   return (
     <section className={styles.FAQ}>
-      <h2 className={styles.FAQTitle}>FAQ</h2>
-      <ul className={styles.FAQList}>
-        {faqs.map((faq) => (
-          <FAQItem
-            key={faq.indexndex}
-            question={faq.question}
-            answer={faq.answer}
-          />
-        ))}
-      </ul>
+      <div className={styles.FAQContainer}>
+        <h2 className={styles.FAQTitle}>FAQ</h2>
+        <ul className={styles.FAQList}>
+          {faqs.map((faq) => (
+            <FAQItem
+              key={faq.indexndex}
+              question={faq.question}
+              answer={faq.answer}
+            />
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };

@@ -5,27 +5,32 @@
     ),
     url(../../../public/catalogSpecial.jpg);
   background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.heroContainer {
+  max-width: 1440px;
+  /* width: 100%; */
   padding-top: 297px;
   padding-bottom: 100px;
   margin: 0 auto;
-  position: relative;
-    z-index: 1;
 }
 
 @media screen and (max-width: 767px) {
-  .hero {
+  .heroContainer {
     padding: 162px 20px 68px 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .hero {
+  .heroContainer {
     padding: 221px 40px 220px 40px;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
-  .hero {
+  .heroContainer {
     padding: 190px 80px 100px 80px;
     box-sizing: border-box;
   }

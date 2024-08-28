@@ -1,57 +1,79 @@
 .chooseUs {
+  position: relative;
+}
+
+.chooseUsContainer {
   max-width: 1440px;
+  /* width: 100%; */
   margin: 0 auto;
-  padding: 80px 212px;
+  padding: 140px 80px;
+  padding-top: 225px;
 }
 
 @media screen and (max-width: 767px) {
-  .chooseUs {
+  .chooseUsContainer {
     padding: 68px 100px;
+    padding-top: 165px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .chooseUs {
-    padding: 80px 20px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .chooseUs {
-    padding: 68px 20px;
+  .chooseUsContainer {
+    padding: 80px 40px;
+    padding-top: 148px;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
-  .chooseUs {
+  .chooseUsContainer {
     padding: 100px 80px;
+    padding-top: 168px;
   }
+}
+
+.chooseUSTitleContainer {
+  background-color: #f9f9f9;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-bottom: 60px;
 }
 .chooseUsTitle {
   color: var(--Elements-Colors-Black, var(--Black-282828, #282828));
-  text-align: center;
+  display: inline-block;
   font-family: 'Open Sans', serif;
   font-size: 32px;
   font-weight: 400;
-  margin-bottom: 80px;
+  margin-bottom: 0;
+  padding: 16px 80px;
+  background-color: #fff;
+
+  border-radius: 0px 20px 20px 0px;
+  background: var(--Text-Colors-White, #fcfcfc);
+  box-shadow: 0px 4px 9.6px 0px rgba(223, 223, 223, 0.16);
 }
 
 @media screen and (max-width: 767px) {
   .chooseUsTitle {
     font-size: 24px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .chooseUsTitle {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
+    padding: 12px 80px;
+  }
+  .chooseUSTitleContainer {
+    padding-bottom: 40px;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
   .chooseUsTitle {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }
 }
 
@@ -63,18 +85,15 @@
   justify-content: space-between;
   row-gap: 32px;
 }
-  
-  @media screen and (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
   .chooseUsList {
     flex-wrap: wrap;
   }
 }
 
-
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  
-.chooseUsList {
+  .chooseUsList {
     flex-wrap: nowrap;
   }
 }
@@ -126,8 +145,8 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .chooseUsItemIcon {
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
   }
 }
 
@@ -150,11 +169,11 @@
 @media screen and (max-width: 767px) {
   .chooseUsItemTitle {
     font-size: 14px;
-  }}
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .chooseUsItemTitle {
     font-size: 24px;
   }
 }
-
