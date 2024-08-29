@@ -4,15 +4,14 @@
   display: flex;
   padding: 26px 106px 26px 126px;
   align-items: baseline;
-justify-content: center;
-position: relative;
+  justify-content: center;
+  position: relative;
   z-index: 2;
   right: 0;
   margin-bottom: -10px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   background-color: #fff;
-
 }
 
 .mainContainer {
@@ -23,24 +22,21 @@ position: relative;
   gap: 35px;
 }
 
-@media  (max-width: 1023px) {
+@media (max-width: 1023px) {
   .mainContainer {
     width: 100%;
     justify-content: space-between;
-
   }
 }
 
 @media (max-width: 767px) {
   .header {
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
     position: relative;
- 
   }
 }
 
@@ -52,7 +48,6 @@ position: relative;
     padding: 24px 40px;
     align-items: center;
     position: relative;
-
   }
 }
 
@@ -65,13 +60,12 @@ position: relative;
     justify-content: center;
     box-sizing: border-box;
     position: relative;
-      z-index: 2;
-      right: 0;
-      margin-bottom: -10px;
-      border-bottom-left-radius: 12px;
-      border-bottom-right-radius: 12px;
-      background-color: #f9f9f9;
-
+    z-index: 2;
+    right: 0;
+    margin-bottom: -10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #f9f9f9;
   }
 }
 
@@ -135,7 +129,6 @@ position: relative;
   }
 }
 
-
 @media (min-width: 1024px) and (max-width: 1439px) {
   .headerMenu {
     display: flex;
@@ -170,13 +163,13 @@ position: relative;
 }
 
 .headerMenuLink:hover {
-
   font-size: 18px;
   font-weight: 700;
   color: #f880c8;
 }
 
-.headerMenuLink:focus {}
+.headerMenuLink:focus {
+}
 
 @media (min-width: 1024px) and (max-width: 1439px) {
   .headerMenuLink:hover,
@@ -272,28 +265,25 @@ position: relative;
   .searchMobileForm .searchFormInput {
     padding: 10px 12px 10px 12px;
   }
-   
 }
-
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .searchMobileForm .searchFormInput {
-      padding: 10px 12px 10px 12px;
-    }
+    padding: 10px 12px 10px 12px;
+  }
   .searchFormBtn .icon {
-    
-    }
+  }
 }
 
-
-@media (min-width: 1024px) and (max-width: 1439px){
-    .searchFormBtn .icon{
-      top: -9px;
-      right: 0;
-    }
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .searchFormBtn .icon {
+    top: -9px;
+    right: 0;
+  }
 }
 
-.iconBtn {}
+.iconBtn {
+}
 
 .iconBox {
   display: flex;
@@ -376,7 +366,7 @@ position: relative;
 
 @media screen and (max-width: 767px) {
   .headerMobileBox {
-   max-width: 124px;
+    max-width: 124px;
     display: flex;
     gap: 12px;
     justify-content: space-around;
@@ -387,7 +377,6 @@ position: relative;
     height: 42px;
     padding: 6px;
     box-sizing: border-box;
-
   }
 
   .headerMobileBox a .icon {
@@ -395,7 +384,6 @@ position: relative;
     height: 56px;
     padding: 12px;
     box-sizing: border-box;
-
   }
 }
 
@@ -408,20 +396,18 @@ position: relative;
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .headerMobileBox .icon {
-      width: 64px;
-      height: 64px;
-      padding: 10px;
-      box-sizing: border-box;
-  
-    }
-  
-    .headerMobileBox a .icon {
-      width: 64px;
-      height: 64px;
-      padding: 10px;
-      box-sizing: border-box;
-  
-    }
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .headerMobileBox a .icon {
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
 }
 
 .mobileNavigator {
