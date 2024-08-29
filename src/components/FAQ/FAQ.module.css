@@ -1,5 +1,5 @@
 .FAQ {
-  background-color: #f9f9f9;
+  background-color: #fcfcfc;
 }
 .FAQContainer {
   max-width: 1440px;
@@ -61,6 +61,7 @@
   list-style: none;
   background-color: #fff;
   padding: 20px;
+  background-color: #fcfcfc;
 }
 
 @media screen and (max-width: 767px) {
