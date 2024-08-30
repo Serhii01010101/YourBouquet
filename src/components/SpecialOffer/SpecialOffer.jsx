@@ -17,8 +17,8 @@ const SpecialOffer = () => {
             </svg>
             <h3 className={styles.offerItemTitle}>Blossom Delight</h3>
             <p className={styles.offerItemPrice}>
-              1850 UAH
-              <span className={styles.offerItemPreviousPrice}>2500 UAH</span>
+              1850 ₴
+              <span className={styles.offerItemPreviousPrice}>2500 ₴</span>
             </p>
             <button type="button" className={styles.offerItemBtn}>
               Buy
@@ -35,8 +35,8 @@ const SpecialOffer = () => {
             </svg>
             <h3 className={styles.offerItemTitle}>Blossom Delight</h3>
             <p className={styles.offerItemPrice}>
-              1850 UAH
-              <span className={styles.offerItemPreviousPrice}>2500 UAH</span>
+              1850 ₴
+              <span className={styles.offerItemPreviousPrice}>2500 ₴</span>
             </p>
             <button type="button" className={styles.offerItemBtn}>
               Buy
@@ -53,8 +53,8 @@ const SpecialOffer = () => {
             </svg>
             <h3 className={styles.offerItemTitle}>Blossom Delight</h3>
             <p className={styles.offerItemPrice}>
-              1850 UAH
-              <span className={styles.offerItemPreviousPrice}>2500 UAH</span>
+              1850 ₴
+              <span className={styles.offerItemPreviousPrice}>2500 ₴</span>
             </p>
             <button type="button" className={styles.offerItemBtn}>
               Buy
@@ -71,8 +71,8 @@ const SpecialOffer = () => {
             </svg>
             <h3 className={styles.offerItemTitle}>Blossom Delight</h3>
             <p className={styles.offerItemPrice}>
-              1850 UAH
-              <span className={styles.offerItemPreviousPrice}>2500 UAH</span>
+              1850 ₴
+              <span className={styles.offerItemPreviousPrice}>2500 ₴</span>
             </p>
             <button type="button" className={styles.offerItemBtn}>
               Buy
