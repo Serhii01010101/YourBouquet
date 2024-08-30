@@ -1,25 +1,27 @@
 .FAQ {
+  background-color: #fcfcfc;
+}
+.FAQContainer {
   max-width: 1440px;
   margin: 0 auto;
   padding: 100px 375px 200px 375px;
-  background-color: #f9f9f9;
 }
 
 @media screen and (max-width: 768px) {
-  .FAQ {
-    width: 100%;
+  .FAQContainer {
     padding: 68px 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .FAQ {
+  .FAQContainer {
     padding: 80px 150px;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
-  .FAQ {
+  .FAQContainer {
     padding: 100px 80px;
   }
 }
@@ -52,13 +54,16 @@
 }
 
 .FAQList {
+  max-width: 650px;
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
   list-style: none;
-  padding: 0;
   background-color: #fff;
   padding: 20px;
+  background-color: #fcfcfc;
 }
+
 @media screen and (max-width: 767px) {
   .FAQList {
     background-color: #f9f9f9;

@@ -8,5 +8,6 @@
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
   "arrowParents": "avoid",
-  "proseWrap": "always"
+  "proseWrap": "always",
+  "files.autoSave": "onWindowChange"
 }
