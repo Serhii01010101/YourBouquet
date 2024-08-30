@@ -6,9 +6,12 @@ import styles from './Footer.module.css';
 const Footer = () => {
   return (
     <footer id="footer" className={styles.footer}>
-      <nav className={styles.footerNavigation}>
-        <div className={styles.footerContainerInfo}>
-          {/* First column */}
+      <div className={styles.footerContainer}>      
+          <div className={styles.footerContainerInfo}>
+           <nav className={styles.footerNavigation}>
+            
+            {/* First column */}
+            <div className={styles.firstColumn}>
           <h2 className={styles.footerTitle}>Catalog</h2>
           <ul className={styles.footerMenu}>
             <li className={styles.footerMenuItem}>
@@ -37,7 +40,9 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-          {/* Second column */}
+            </div>
+            {/* Second column */}
+            <div className={styles.secondColumn}>
           <address className={styles.footerAddress} id="contacts">
             <h2 className={styles.footerTitle}>Contacts</h2>
 
@@ -66,7 +71,9 @@ const Footer = () => {
               info@yourbouquet.com
             </a>
           </address>
-          {/* Third column */}
+            </div>
+            {/* Third column */}
+            <div className={styles.thirdColumn}>
           <h2 className={styles.footerTitle}>About us</h2>
           <ul className={styles.footerAboutUsList}>
             <li className={styles.footerAboutUsLItem}>
@@ -76,7 +83,10 @@ const Footer = () => {
               <a href="">Reviews</a>
             </li>
           </ul>
-          {/* Fourth column */}
+            </div>
+            {/* Fourth column */}
+            <div className={styles.fourthColumn}>
+
           <h2 className={styles.footerTitle}>Socials</h2>
           <ul className={styles.footerSocialsList}>
             <li className={styles.footerSocialsItem}>
@@ -110,10 +120,12 @@ const Footer = () => {
             <Link to={ROUTES.HOME} className={styles.footerLogo}>
               YourBouquet
             </Link>
+            </div>
           </div>
-
-          {/* Bottom line */}
-
+   
+          </nav>
+          <div className="footerFlexContainer">
+           {/* Bottom line */}
           <ul className={styles.rightsList}>
             <li className={styles.rightsItem}>
               <a
@@ -156,8 +168,9 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-        </div>
-      </nav>
+          </div>
+          </div>
+      </div>
     </footer>
   );
 };
