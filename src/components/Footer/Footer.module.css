@@ -1,7 +1,37 @@
+@media screen and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+}
+
 .footer {
   max-width: 1440px;
   padding: 100px 80px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    width: 100%;
+    padding: 68px 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    width: 100%;
+    padding: 80px 40px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .footer {
+    width: 100%;
+    padding: 100px 80px;
+  }
 }
 
 .footerContainerMain {
@@ -13,9 +43,40 @@
   gap: 200px;
 }
 
+@media screen and (max-width: 767px) {
+  .footerContainerInfo {
+    gap: 68px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footerContainerInfo {
+    gap: 40px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .footerContainerInfo {
+    gap: 80px;
+  }
+}
+
 .footerNavigation {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .footerNavigation {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footerNavigation > div {
+    width: 50%;
+  }
 }
 
 .footerNavigation > div {
@@ -34,10 +95,50 @@
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 767px) {
+}
+
+.footerTitle {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footerTitle {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .footerTitle {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+}
+
 .footerMenu {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .footerMenu {
+    gap: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footerMenu {
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .footerMenu {
+    gap: 24px;
+  }
 }
 
 .footerMenuItem {
@@ -50,6 +151,24 @@
   font-weight: 400;
   line-height: normal;
   color: black;
+}
+
+@media screen and (max-width: 767px) {
+  .footerMenuLink {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footerMenuLink {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .footerMenuLink {
+    font-size: 16px;
+  }
 }
 
 /* Second column */
@@ -70,6 +189,23 @@
   margin-bottom: 32px;
 }
 
+@media screen and (max-width: 767px) {
+  .footerAddressList {
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footerAddressList {
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+}
+
 .footerAddressItem {
 }
 
@@ -80,6 +216,21 @@
   font-weight: 400;
   line-height: normal;
   color: black;
+}
+
+@media screen and (max-width: 767px) {
+  .footerAddressLink {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footerAddressLink {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
 }
 
 /* Third column */
@@ -93,6 +244,18 @@
   gap: 32px;
 }
 
+@media screen and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footerAboutUsList {
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+}
+
 .footerAboutUsLItem a {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
@@ -102,16 +265,82 @@
   color: black;
 }
 
+@media screen and (max-width: 767px) {
+  .footerAboutUsLItem a {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footerAboutUsLItem a {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+}
+
 /* Fourth column */
 
 .fourthColumn {
   margin-right: 95px;
 }
 
+@media screen and (max-width: 767px) {
+  .fourthColumn {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+  .fourthColumn > .footerTitle {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .fourthColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+}
+
+@media (max-width: 1439px) {
+  .fourthColumn {
+    margin-right: 0;
+  }
+}
+
 .footerSocialsList {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .footerSocialsList {
+    gap: 25px;
+    justify-content: start;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footerSocialsList {
+    justify-content: start;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .footerSocialsList {
+    justify-content: start;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
 }
 
 .footerSocialsItem {
@@ -125,6 +354,21 @@
   box-sizing: border-box;
   width: 32px;
   height: 32px;
+  fill: none;
+  stroke: #100f0f;
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footerSocialsIcon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
 }
 
 .logoSocialContainer a {
@@ -140,6 +384,14 @@
   color: #fff;
 }
 
+@media screen and (max-width: 767px) {
+  .logoSocialContainer a {
+    width: 80px;
+    height: 80px;
+    font-size: 12px;
+  }
+}
+
 /* Bottom line */
 
 .bottomLine {
@@ -150,8 +402,20 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 767px) {
+  .rightsList {
+    display: flex;
+  }
+}
+
 .rightsList li:last-child {
   margin-right: 55px;
+}
+
+@media (max-width: 1439px) {
+  .rightsList li:last-child {
+    margin-right: 0;
+  }
 }
 
 .rightsItem {
@@ -165,4 +429,22 @@
   line-height: normal;
   color: black;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .rightsLink {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .rightsLink {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .rightsLink {
+    font-size: 16px;
+  }
 }
