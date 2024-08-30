@@ -4,7 +4,7 @@
   margin: 0 auto;
   display: flex;
   background-color: #fff;
-  display: none;
+  /* display: none; */
 }
 
 @media screen and (max-width: 767px) {
@@ -14,7 +14,7 @@
     flex-direction: column;
     width: 100%;
     padding: 68px 40px 68px 40px;
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -25,13 +25,13 @@
     flex-direction: column; */
     width: 100%;
     padding: 80px 20px;
-    display: none;
+    /* display: none; */
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
   .footer {
-    display: none;
+    /* display: none; */
   }
 }
 
