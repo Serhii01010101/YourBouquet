@@ -56,6 +56,7 @@
 .FAQList {
   max-width: 650px;
   display: flex;
+  gap: 20px;
   margin: 0 auto;
   flex-direction: column;
   list-style: none;
@@ -66,6 +67,7 @@
 
 @media screen and (max-width: 767px) {
   .FAQList {
+    gap: 16px;
     background-color: #f9f9f9;
     padding: 12px 0 12px 0;
     margin: 0 auto;
@@ -82,6 +84,7 @@
     align-items: stretch;
     background-color: #f9f9f9;
     padding: 0;
+    gap: 0;
   }
 }
 
@@ -94,6 +97,7 @@
     align-items: stretch;
     background-color: #f9f9f9;
     padding: 0;
+    gap: 0;
   }
 }
 
@@ -101,9 +105,10 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 10px;
+
   border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
+  padding: 20px 0 0px 0;
+  margin: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -111,6 +116,7 @@
     max-width: 390px;
     display: flex;
     align-items: stretch;
+    padding: 14px 0 14px 0;
   }
 }
 
@@ -139,20 +145,29 @@
   cursor: pointer;
   font-size: 1.2em;
   font-weight: 400;
+  padding: 24px 0 24px 0;
+  margin: 0;
 }
 
 @media screen and (max-width: 767px) {
   .FAQItemTitle {
     width: 70%;
     font-size: 16px;
+    padding: 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .FAQItemTitle {
     margin: 0;
+    padding: 0;
     width: 70%;
     font-size: 18px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .FAQItemTitle {
+    padding: 0;
   }
 }
 
@@ -161,6 +176,7 @@
   margin-bottom: 0;
   font-size: 16px;
   padding-right: 90px;
+  padding-bottom: 24px;
 
   /* display: none; */
 }
@@ -181,7 +197,7 @@
 
 .FAQIcon {
   position: absolute;
-  top: 0;
+  top: 38px;
   right: 0;
   width: 44px;
   height: 40px;
@@ -194,10 +210,17 @@
     margin-left: auto;
     width: 44px;
     height: 40px;
+    top: 5px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .FAQIcon {
+    top: 17px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
   .FAQIcon {
     top: 17px;
   }
