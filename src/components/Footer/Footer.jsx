@@ -79,10 +79,10 @@ const Footer = () => {
               <h2 className={styles.footerTitle}>About us</h2>
               <ul className={styles.footerAboutUsList}>
                 <li className={styles.footerAboutUsLItem}>
-                  <a href="">Why we</a>
+                  <a href="" className={styles.footerAboutUsItemLink}>Why we</a>
                 </li>
                 <li className={styles.footerAboutUsLItem}>
-                  <a href="">Reviews</a>
+                  <a href="" className={styles.footerAboutUsItemLink}>Reviews</a>
                 </li>
               </ul>
             </div>
