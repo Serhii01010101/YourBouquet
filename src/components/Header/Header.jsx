@@ -3,6 +3,8 @@ import { Link, NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
 import { ROUTES } from '../../utils/routes';
 
+import pathSprite from '../../../public/icons.svg#icon-search';
+
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -68,7 +70,7 @@ const Header = () => {
             />
             <button className={styles.searchFormBtn}>
               <svg className={styles.icon}>
-                <use href="../../../public/icons.svg#icon-search"></use>
+                <use href={pathSprite}></use>
               </svg>
             </button>
           </form>
