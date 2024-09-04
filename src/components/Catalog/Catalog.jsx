@@ -1,5 +1,7 @@
 import styles from './Catalog.module.css';
 
+
+
 const Catalog = () => {
   return (
     <section className={styles.catalog}>

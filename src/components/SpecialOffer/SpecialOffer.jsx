@@ -1,4 +1,6 @@
 import styles from './SpecialOffer.module.css';
+import pathSprite from '../../../public/icons.svg#icon-heart';
+
 
 const SpecialOffer = () => {
   return (
@@ -13,7 +15,7 @@ const SpecialOffer = () => {
               className={styles.offerItemImg}
             />
             <svg className={styles.offerItemIcon}>
-              <use href="../../../public/icons.svg#icon-heart"></use>
+              <use href={pathSprite}></use>
             </svg>
             <h3 className={styles.offerItemTitle}>Blossom Delight</h3>
             <p className={styles.offerItemPrice}>
