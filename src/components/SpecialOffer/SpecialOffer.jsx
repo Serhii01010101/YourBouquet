@@ -1,7 +1,6 @@
 import styles from './SpecialOffer.module.css';
 import pathSprite from '../../../public/icons.svg#icon-heart';
 
-
 const SpecialOffer = () => {
   return (
     <section className={styles.offer}>
