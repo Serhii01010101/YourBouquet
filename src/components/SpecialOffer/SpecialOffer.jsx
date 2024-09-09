@@ -9,7 +9,7 @@ const SpecialOffer = () => {
         <ul className={styles.offerList}>
           <li className={styles.offerItem}>
             <img
-              src="/../../public/flowerImage.jpg"
+              src="/public/flowerImage.jpg"
               alt="Flower image"
               className={styles.offerItemImg}
             />
@@ -63,7 +63,7 @@ const SpecialOffer = () => {
           </li>
           <li className={styles.offerItem}>
             <img
-              src="../../../public/flowerImage.jpg"
+              src="public/flowerImage.jpg"
               alt="Flower image"
               className={styles.offerItemImg}
             />
