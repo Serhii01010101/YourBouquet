@@ -28,11 +28,10 @@ export const apiGetProductsDetails = createAsyncThunk(
 );
 
 const initialState = {
-  product: null,
+  products: null,
   productDetails: null,
   status: STATUSES.idle, // "idle" | "pending" | "success" | "error"
   error: null,
-  page: 1,
 };
 
 const productsSlice = createSlice({
@@ -71,7 +70,7 @@ const productsSlice = createSlice({
       .addCase(apiGetProductsDetails.rejected, (state, action) => {
         state.status = STATUSES.error;
         state.error = action.payload;
-      }), 
+      }),
 });
 
 // export const { incrementPage } = productsSlice.actions;
