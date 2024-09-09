@@ -34,7 +34,7 @@ const Header = () => {
             </li>
             <li className={styles.headerMenuItem}>
               <NavLink
-                to={ROUTES.CATALOG}
+                to="/products"
                 className={({ isActive }) =>
                   `${styles.headerMenuLink} ${
                     isActive ? styles.headerMenuActive : ''
