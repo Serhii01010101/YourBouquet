@@ -1,7 +1,6 @@
 import styles from './SpecialOffer.module.css';
 import pathSprite from '../../../public/icons.svg#icon-heart';
 
-
 const SpecialOffer = () => {
   return (
     <section className={styles.offer}>
@@ -10,7 +9,7 @@ const SpecialOffer = () => {
         <ul className={styles.offerList}>
           <li className={styles.offerItem}>
             <img
-              src="../../../public/flowerImage.jpg"
+              src="/../../public/flowerImage.jpg"
               alt="Flower image"
               className={styles.offerItemImg}
             />
@@ -28,12 +27,12 @@ const SpecialOffer = () => {
           </li>
           <li className={styles.offerItem}>
             <img
-              src="../../../public/flowerImage.jpg"
+              src="/../public/flowerImage.jpg"
               alt="Flower image"
               className={styles.offerItemImg}
             />
             <svg className={styles.offerItemIcon}>
-              <use href="../../../public/icons.svg#icon-heart"></use>
+              <use href="/public/icons.svg#icon-heart"></use>
             </svg>
             <h3 className={styles.offerItemTitle}>Blossom Delight</h3>
             <p className={styles.offerItemPrice}>
@@ -46,7 +45,7 @@ const SpecialOffer = () => {
           </li>
           <li className={styles.offerItem}>
             <img
-              src="../../../public/flowerImage.jpg"
+              src="public/flowerImage.jpg"
               alt="Flower image"
               className={styles.offerItemImg}
             />
@@ -87,3 +86,5 @@ const SpecialOffer = () => {
 };
 
 export default SpecialOffer;
+
+// comments
