@@ -15,7 +15,7 @@ export const requestProductsDetailsById = async (productId) => {
 };
 
 export const requestCategories = async () => {
-  const { data } = await apiUrl.get(`/categories`);
+  const { data } = await apiUrl.get(`/productcategories`);
   return data;
 };
 
