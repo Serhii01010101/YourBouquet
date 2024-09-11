@@ -1,6 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-
 import { productsReducer } from './products/productsSlice';
 
 export const store = configureStore({
@@ -8,4 +7,5 @@ export const store = configureStore({
     categories: '',
     products: productsReducer,
   },
+  devTools: true,
 });
