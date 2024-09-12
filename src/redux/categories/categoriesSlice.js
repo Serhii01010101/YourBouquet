@@ -16,14 +16,20 @@ export const apiGetCtegories = createAsyncThunk(
 
 const initialState = {
   list: [],
+  isLoading: false,
 };
 
 const categoriesSlice = createSlice({
   name: 'categories',
   initialState,
   extraReducers: (builder) => {
-    builder.addCase(apiGetCtegories.fulfilled, (state, action) => {
-      state.list = action.payload;
+    builder.addCase(apiGetCtegories.pending, (state, { payload }) => {
+      state.isLoading = true;
+    });
+    builder.addCase(apiGetCtegories.fulfilled, (state, { payload }) => {
+      state.list = payload;
     });
   },
 });
+
+export default categoriesSlice.reducer;
