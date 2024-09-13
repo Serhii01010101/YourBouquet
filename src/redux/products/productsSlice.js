@@ -4,7 +4,7 @@ import { STATUSES } from './../../utils/constants';
 
 export const apiGetProducts = createAsyncThunk(
   'products/apiGetProducts',
-  async (_, thunkApi) => {
+  async (_, thunkApi) => {  
     try {
       const products = await requestProduct();
       return products; // Action Payload

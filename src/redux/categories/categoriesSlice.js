@@ -1,8 +1,8 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { requestCategories } from '../../services/api';
 
-export const apiGetCtegories = createAsyncThunk(
-  'categories/apiGetCtegories',
+export const apiGetCategories = createAsyncThunk(
+  'categories/apiGetCategories',
   async (_, thunkApi) => {
     try {
       const categories = await requestCategories();
@@ -23,11 +23,15 @@ const categoriesSlice = createSlice({
   name: 'categories',
   initialState,
   extraReducers: (builder) => {
-    builder.addCase(apiGetCtegories.pending, (state, { payload }) => {
+    builder.addCase(apiGetCategories.pending, (state) => {
       state.isLoading = true;
     });
-    builder.addCase(apiGetCtegories.fulfilled, (state, { payload }) => {
+    builder.addCase(apiGetCategories.fulfilled, (state, { payload }) => {
       state.list = payload;
+      state.isLoading = false;
+    });
+    builder.addCase(apiGetCategories.rejected, (state) => {
+      state.isLoading = false;
     });
   },
 });
