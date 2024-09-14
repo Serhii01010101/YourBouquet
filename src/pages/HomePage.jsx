@@ -9,7 +9,7 @@ const HomePage = () => {
     <>
       <Hero />
       <SpecialOffer />
-      <ChooseUs />
+        <ChooseUs />
       <Catalog />
       <FAQ />
     </>

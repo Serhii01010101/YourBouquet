@@ -8,9 +8,9 @@ import ProductsList from '../components/ProductsList/ProductsList';
 
 const CatalogPage = () => {
   const dispatch = useDispatch();
-  const products = useSelector((state) => state.products.products);
-  const status = useSelector((state) => state.products.status);
-  const error = useSelector((state) => state.products.error);
+  const products = useSelector((state) => state.products.products || '');
+  const status = useSelector((state) => state.products.status || '');
+  const error = useSelector((state) => state.products.error || '');
 
   useEffect(() => {
     dispatch(requestProduct());

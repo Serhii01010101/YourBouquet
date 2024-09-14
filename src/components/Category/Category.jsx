@@ -1,26 +1,26 @@
 import { NavLink } from 'react-router-dom';
-import styles from './Catalog.module.css';
+import { useSelector } from 'react-redux';
 
-const Catalog = () => {
+import styles from '../Category/Category.module.css';
+
+const Category = () => {
+  const { list } = useSelector(({ categories }) => categories || {});
+  console.log('list', list);
+
   return (
-    <section className={styles.catalog}>
-      <div className={styles.catalogContainer}>
-        <h2 className={styles.catalogTitle}>Catalog</h2>
-        <ul className={styles.catalogList}>
-          <li className={styles.catalogItem}>
-            <NavLink to={`/products?category=${1}`} className={styles.catalogItemLink}>
-              <img
-                src="./../../public/catalogMono.jpg"
-                alt="Mono bouquets image"
-                className={styles.catalogItemImg}
-              />
-              <h3 className={styles.catalogItemTitle}>Mono Bouquets</h3>
+    <section className={styles.category}>
+      <h2 className={styles.categoryTitle}>There are our {name}</h2>
+      <ul className={styles.categoryList}>
+        {list.map(({ id, name }) => (
+          <li key={id} className={styles.categoryItem}>
+            <NavLink to={`/category=${id}`} className={styles.categoryItemLink}>
+              <h3 className={styles.categoryItemTitle}>{name}</h3>
             </NavLink>
           </li>
-        </ul>
-      </div>
+        ))}
+      </ul>
     </section>
   );
 };
 
-export default Catalog;
+export default Category;
