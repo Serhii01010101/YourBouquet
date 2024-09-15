@@ -1,10 +1,13 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { requestProduct, requestProductsDetailsById } from './../../services/api';
+import {
+  requestProduct,
+  requestProductsDetailsById,
+} from './../../services/api';
 import { STATUSES } from './../../utils/constants';
 
 export const apiGetProducts = createAsyncThunk(
   'products/apiGetProducts',
-  async (_, thunkApi) => {  
+  async (_, thunkApi) => {
     try {
       const products = await requestProduct();
       return products; // Action Payload
@@ -28,7 +31,7 @@ export const apiGetProductsDetails = createAsyncThunk(
 );
 
 const initialState = {
-  products: null,
+  products: [],
   productDetails: null,
   status: STATUSES.idle, // "idle" | "pending" | "success" | "error"
   error: null,
@@ -37,24 +40,19 @@ const initialState = {
 const productsSlice = createSlice({
   name: 'products',
   initialState,
-  reducers: {
-    // incrementPage: (state) => {
-    //   state.page = state.page + 1;
-    // },
-  },
   extraReducers: (builder) =>
     builder
       .addCase(apiGetProducts.pending, (state) => {
         state.status = STATUSES.pending;
         state.error = null;
       })
-      .addCase(apiGetProducts.fulfilled, (state, action) => {
+      .addCase(apiGetProducts.fulfilled, (state, { payload }) => {
         state.status = STATUSES.success;
-        state.posts = action.payload;
+        state.products = payload;
       })
-      .addCase(apiGetProducts.rejected, (state, action) => {
+      .addCase(apiGetProducts.rejected, (state, { payload }) => {
         state.status = STATUSES.error;
-        state.error = action.payload;
+        state.error = payload;
       })
 
       // ------ GET PRODUCTS DETAILS
@@ -63,13 +61,13 @@ const productsSlice = createSlice({
         state.status = STATUSES.pending;
         state.error = null;
       })
-      .addCase(apiGetProductsDetails.fulfilled, (state, action) => {
+      .addCase(apiGetProductsDetails.fulfilled, (state, { payload }) => {
         state.status = STATUSES.success;
-        state.postDetails = action.payload;
+        state.productDetails = payload;
       })
-      .addCase(apiGetProductsDetails.rejected, (state, action) => {
+      .addCase(apiGetProductsDetails.rejected, (state, { payload }) => {
         state.status = STATUSES.error;
-        state.error = action.payload;
+        state.error = payload;
       }),
 });
 

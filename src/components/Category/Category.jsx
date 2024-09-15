@@ -4,8 +4,7 @@ import { useSelector } from 'react-redux';
 import styles from '../Category/Category.module.css';
 
 const Category = () => {
-  const { list } = useSelector(({ categories }) => categories || {});
-  console.log('list', list);
+  const { list } = useSelector(({ categories }) => categories);
 
   return (
     <section className={styles.category}>
@@ -13,7 +12,14 @@ const Category = () => {
       <ul className={styles.categoryList}>
         {list.map(({ id, name }) => (
           <li key={id} className={styles.categoryItem}>
-            <NavLink to={`/category=${id}`} className={styles.categoryItemLink}>
+            <NavLink
+              to={`/category=${id}`}
+              className={({ isActive }) =>
+                `${styles.categoryItemLink} ${
+                  isActive ? styles.categoryItemLinkActive : ''
+                }`
+              }
+            >
               <h3 className={styles.categoryItemTitle}>{name}</h3>
             </NavLink>
           </li>

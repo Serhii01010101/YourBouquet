@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiUrl = axios.create({
-  baseURL: 'https://66e4ca0ad2405277ed154146.mockapi.io/YourBou',
+  baseURL: 'https://your-bouquet.azurewebsites.net/api',
 });
 
 export const requestProduct = async () => {

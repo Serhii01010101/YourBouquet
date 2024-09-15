@@ -9,7 +9,7 @@ const Product = () => {
         className={styles.productImg}
       />
       <div>
-        <h2 className={styles.title}>Crimson Charm</h2>
+        <h2 className={styles.title}>{name}</h2>
         <p className={styles.text}>
           A passionate bouquet of crimson tulips, embodying love and desire.
           This bold and captivating arrangement is perfect for romantic gestures

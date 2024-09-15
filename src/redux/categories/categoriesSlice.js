@@ -8,8 +8,7 @@ export const apiGetCategories = createAsyncThunk(
       const categories = await requestCategories();
       return categories;
     } catch (error) {
-      console.log(error);
-      return thunkApi.rejectWithValue(error.message);
+           return thunkApi.rejectWithValue(error.message);
     }
   }
 );

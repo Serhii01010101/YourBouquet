@@ -3,4 +3,5 @@ export const ROUTES = {
   CATALOG: '/catalog',
   CATALOGCATEGORY: '/catalog/:categoryId',
   SpecialOffer: '/specialoffer',
-  };
+  PRODUCT: '/products/:id',
+};
