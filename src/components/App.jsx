@@ -1,6 +1,5 @@
 import { useDispatch } from 'react-redux';
 
-
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import AppRoutes from './Routes/Routes';
@@ -12,12 +11,13 @@ import { apiGetCategories } from '../redux/categories/categoriesSlice';
 export const App = () => {
   const dispatch = useDispatch(apiGetCategories);
 
+  
+
   useEffect(() => {
     dispatch(apiGetCategories());
-  }, [dispatch]);
+  }, []);
 
   return (
-
     <div className={styles.appContainer}>
       <Header />
       <main>

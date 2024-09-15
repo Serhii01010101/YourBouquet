@@ -19,12 +19,12 @@ const CatalogPage = () => {
   const showProducts = status === STATUSES.success && Array.isArray(products);
   // const visiblePosts = POSTS_PER_PAGE * page;
 
+  console.log(products);
+  
   const renderView = {
     [STATUSES.pending]: <Loader />,
     [STATUSES.error]: <ErrorMessage error={error} />,
-    [STATUSES.success]: showProducts && (
-      <ProductsList products={products} />
-    ),
+    [STATUSES.success]: showProducts && <ProductsList products={products} />,
   };
 
   return <div>{renderView[status]}</div>;
