@@ -6,8 +6,7 @@ export const apiGetCategories = createAsyncThunk(
   async (_, thunkApi) => {
     try {
       const categories = await requestCategories();
-      console.log('Вызов консоль лог');
-      return categories;
+         return categories;
     } catch (error) {
            return thunkApi.rejectWithValue(error.message);
     }

@@ -11,11 +11,9 @@ import { apiGetCategories } from '../redux/categories/categoriesSlice';
 export const App = () => {
   const dispatch = useDispatch(apiGetCategories);
 
-  
-
   useEffect(() => {
     dispatch(apiGetCategories());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className={styles.appContainer}>
