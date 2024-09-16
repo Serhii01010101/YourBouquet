@@ -6,9 +6,9 @@ export const apiGetCategories = createAsyncThunk(
   async (_, thunkApi) => {
     try {
       const categories = await requestCategories();
-         return categories;
+      return categories;
     } catch (error) {
-           return thunkApi.rejectWithValue(error.message);
+      return thunkApi.rejectWithValue(error.message);
     }
   }
 );

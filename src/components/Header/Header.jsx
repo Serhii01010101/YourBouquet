@@ -5,6 +5,9 @@ import { ROUTES } from '../../utils/routes';
 
 import pathSprite from '../../../public/icons.svg#icon-search';
 
+import pathSpriteHeart from '../../../public/icons.svg#icon-heart';
+import pathSpriteBasket from '../../../public/icons.svg#icon-basket';
+
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -78,12 +81,12 @@ const Header = () => {
           <div className={styles.iconBox}>
             <Link to="/" className={styles.iconBtn}>
               <svg className={styles.icon}>
-                <use href="../../../public/icons.svg#icon-heart"></use>
+                <use href={pathSpriteHeart}></use>
               </svg>
             </Link>
             <Link to="/" className={styles.iconBtn}>
               <svg className={styles.icon}>
-                <use href="../../../public/icons.svg#icon-basket"></use>
+                <use href={pathSpriteBasket}></use>
               </svg>
             </Link>
           </div>

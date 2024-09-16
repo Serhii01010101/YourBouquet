@@ -8,12 +8,14 @@ import { apiGetProductsDetails } from '../redux/products/productsSlice';
 const ProductDetailsPage = () => {
   const { productId } = useParams();
   const dispatch = useDispatch();
-  const location = useLocation();
+  // const location = useLocation();
   // const backLinkRef = useRef(location.state?.from ?? '/products');
 
-  const productsDetails = useSelector((state) => state.products.productDetails);
-  const status = useSelector((state) => state.products.status);
-  const error = useSelector((state) => state.products.error);
+  const productsDetails = useSelector(
+    ({ products }) => products.productDetails
+  );
+  const status = useSelector(({ products }) => products.status);
+  const error = useSelector(({ products }) => products.error);
 
   useEffect(() => {
     dispatch(apiGetProductsDetails(productId));
