@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import { ROUTES } from '../../utils/routes';
 
+import pathSpriteInstagram from '../../../public/icons.svg#icon-instagram';
+import pathSpriteTelegram from '../../../public/icons.svg#icon-telegram';
+
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -79,10 +82,14 @@ const Footer = () => {
               <h2 className={styles.footerTitle}>About us</h2>
               <ul className={styles.footerAboutUsList}>
                 <li className={styles.footerAboutUsLItem}>
-                  <a href="" className={styles.footerAboutUsItemLink}>Why we</a>
+                  <a href="" className={styles.footerAboutUsItemLink}>
+                    Why we
+                  </a>
                 </li>
                 <li className={styles.footerAboutUsLItem}>
-                  <a href="" className={styles.footerAboutUsItemLink}>Reviews</a>
+                  <a href="" className={styles.footerAboutUsItemLink}>
+                    Reviews
+                  </a>
                 </li>
               </ul>
             </div>
@@ -100,7 +107,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                   >
                     <svg className={styles.footerSocialsIcon}>
-                      <use href="../../../public/icons.svg#icon-instagram"></use>
+                      <use href={pathSpriteInstagram}></use>
                     </svg>
                   </a>
                 </li>
@@ -113,7 +120,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                   >
                     <svg className={styles.footerSocialsIcon}>
-                      <use href="../../../public/icons.svg#icon-telegram"></use>
+                      <use href={pathSpriteTelegram}></use>
                     </svg>
                   </a>
                 </li>

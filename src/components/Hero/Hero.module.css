@@ -3,7 +3,7 @@
       rgba(56, 48, 56, 0.3),
       rgba(56, 48, 56, 0.3)
     ),
-    url(../../../public/catalogSpecial.jpg);
+    url(../../../public/hero.png);
   background-size: cover;
   position: relative;
   z-index: 1;

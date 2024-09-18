@@ -19,8 +19,6 @@ const CatalogPage = () => {
   const showProducts = status === STATUSES.success && Array.isArray(products);
   // const visiblePosts = POSTS_PER_PAGE * page;
 
-  console.log(products);
-  
   const renderView = {
     [STATUSES.pending]: <Loader />,
     [STATUSES.error]: <ErrorMessage error={error} />,

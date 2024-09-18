@@ -3,17 +3,21 @@ import styles from './Product.module.css';
 import pathSpriteScooter from '../../../public/icons.svg#icon-scooter';
 import pathSpriteCalendar from '../../../public/icons.svg#icon-calendar';
 
-const Product = ({ name, photos, price, discountPercent, stock }) => {
+const Product = ({
+  name,
+  photos,
+  price = 0,
+  description = 'Тут має бути опис товару',
+  discountPercent,
+  stock,
+  isBouquet = true,
+}) => {
   return (
     <section className={styles.product}>
       <img src={photos} alt={name} className={styles.productImg} />
       <div>
         <h2 className={styles.title}>{name}</h2>
-        <p className={styles.text}>
-          A passionate bouquet of crimson tulips, embodying love and desire.
-          This bold and captivating arrangement is perfect for romantic gestures
-          or adding a touch of drama to any occasion.
-        </p>
+        <p className={styles.text}>{description}</p>
         <p className={styles.textSpan}>*Price started from 200₴</p>
         <h3 className={styles.subTitleQuantity}>Quantity:</h3>
 
@@ -21,7 +25,7 @@ const Product = ({ name, photos, price, discountPercent, stock }) => {
           *Number of flowers in the bouquet, package is included
         </p>
 
-        <h3 className={styles.subTitle}>Price: {price}₴</h3>
+        <h3 className={styles.subTitle}>Price: {price} ₴</h3>
         <button type="button" className={styles.button}>
           Add to Cart
         </button>
