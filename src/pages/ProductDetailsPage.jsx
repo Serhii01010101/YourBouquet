@@ -23,7 +23,7 @@ const ProductDetailsPage = () => {
 
   return (
     <>
-      <Product />
+      <Product productId={productId} />
     </>
   );
 };

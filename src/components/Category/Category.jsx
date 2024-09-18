@@ -13,7 +13,7 @@ const Category = () => {
         {list.map(({ id, name }) => (
           <li key={id} className={styles.categoryItem}>
             <NavLink
-              to={`/category=${id}`}
+              to={`/catalog/category=${name}`}
               className={({ isActive }) =>
                 `${styles.categoryItemLink} ${
                   isActive ? styles.categoryItemLinkActive : ''

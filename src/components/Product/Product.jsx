@@ -1,13 +1,12 @@
 import styles from './Product.module.css';
 
-const Product = () => {
+import pathSpriteScooter from '../../../public/icons.svg#icon-scooter';
+import pathSpriteCalendar from '../../../public/icons.svg#icon-calendar';
+
+const Product = ({ name, photos, price, discountPercent, stock }) => {
   return (
     <section className={styles.product}>
-      <img
-        src="../../../public/ProductPhoto.jpg"
-        alt="Flower image"
-        className={styles.productImg}
-      />
+      <img src={photos} alt={name} className={styles.productImg} />
       <div>
         <h2 className={styles.title}>{name}</h2>
         <p className={styles.text}>
@@ -22,7 +21,7 @@ const Product = () => {
           *Number of flowers in the bouquet, package is included
         </p>
 
-        <h3 className={styles.subTitle}>Price: 200 ₴</h3>
+        <h3 className={styles.subTitle}>Price: {price}₴</h3>
         <button type="button" className={styles.button}>
           Add to Cart
         </button>
@@ -33,13 +32,13 @@ const Product = () => {
         <ul className={styles.info}>
           <li className={styles.infoItem}>
             <svg className={styles.icon}>
-              <use href="../../../public/icons.svg#icon-scooter"></use>
+              <use href={pathSpriteScooter}></use>
             </svg>
             <p className={styles.infoText}>Free delivery from 600₴</p>
           </li>
           <li className={styles.infoItem}>
             <svg className={styles.icon}>
-              <use href="../../../public/icons.svg#icon-calendar"></use>
+              <use href={pathSpriteCalendar}></use>
             </svg>
             <p className={styles.infoText}>Every day from 8:00 to 22:00</p>
           </li>
