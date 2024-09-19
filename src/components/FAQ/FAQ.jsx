@@ -2,6 +2,9 @@ import { useState } from 'react';
 
 import styles from './FAQ.module.css';
 
+import pathSpriteIconMinus from '../../../public/icons.svg#icon-minus';
+import pathSpriteIconPlus from '../../../public/icons.svg#icon-plus';
+
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,13 +18,13 @@ const FAQItem = ({ question, answer }) => {
       {isOpen ? (
         <>
           <svg className={styles.FAQIcon}>
-            <use href="/public/icons.svg#icon-minus"></use>
+            <use href={pathSpriteIconMinus}></use>
           </svg>
           <p className={styles.FAQItemText}>{answer}</p>
         </>
       ) : (
         <svg className={styles.FAQIcon}>
-          <use href="./public/icons.svg#icon-plus"></use>
+          <use href={pathSpriteIconPlus}></use>
         </svg>
       )}
     </li>
