@@ -410,6 +410,12 @@
   stroke: #100f0f;
 }
 
+.footerSocialsIcon:hover,
+.footerSocialsIcon:focus {
+  fill: #f880c8;
+  stroke: #f880c8;
+}
+
 @media screen and (max-width: 767px) {
 }
 
