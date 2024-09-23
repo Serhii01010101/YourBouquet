@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "icon": "../../../public/icons.svg#icon-easy-order",
+    "text": "Easy order"
+  },
+  {
+    "id": "2",
+    "icon": "../../../public/icons.svg#icon-fast-delivery",
+    "text": "Fast delivery"
+  },
+  {
+    "id": "3",
+    "icon": "../../../public/icons.svg#icon-premium-quality",
+    "text": "Premium Quality"
+  },
+  {
+    "id": "4",
+    "icon": "../../../public/icons.svg#icon-your-own-design",
+    "text": "Your own design"
+  }
+]

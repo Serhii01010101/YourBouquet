@@ -1,14 +1,35 @@
 import styles from './ChooseUs.module.css';
+import items from '../../whyChooseUsData.json';
+import ChooseUsSection from '../../components/ChooseUsSection/ChooseUsSection';
 
-import pathSpriteEasyOrder from '../../../public/icons.svg#icon-easy-order';
-import pathSpriteFastDelivery from '../../../public/icons.svg#icon-fast-delivery';
-import pathSpritePremiumQuality from '../../../public/icons.svg#icon-premium-quality';
-import pathSpriteOwnDesign from '../../../public/icons.svg#icon-your-own-design';
+// import pathSpriteEasyOrder from '../../../public/icons.svg#icon-easy-order';
+// import pathSpriteFastDelivery from '../../../public/icons.svg#icon-fast-delivery';
+// import pathSpritePremiumQuality from '../../../public/icons.svg#icon-premium-quality';
+// import pathSpriteOwnDesign from '../../../public/icons.svg#icon-your-own-design';
 
 const ChooseUs = () => {
   return (
     <section className={styles.chooseUs}>
       <div className={styles.chooseUSTitleContainer}>
+        <h2 className={styles.chooseUsTitle}>Why choose us?</h2>
+      </div>
+      <div className={styles.chooseUsContainer}>
+        <ul className={styles.chooseUsList}>
+          {items.map(({ id, icon, text }) => (
+            <li key={id} className={styles.chooseUsItem}>
+              <ChooseUsSection id={id} icon={icon} text={text} />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+};
+
+export default ChooseUs;
+
+{
+  /* <div className={styles.chooseUSTitleContainer}>
         <h2 className={styles.chooseUsTitle}>Why choose us?</h2>
       </div>
       <div className={styles.chooseUsContainer}>
@@ -38,9 +59,5 @@ const ChooseUs = () => {
             <h3 className={styles.chooseUsItemTitle}>Your own design</h3>
           </li>
         </ul>
-      </div>
-    </section>
-  );
-};
-
-export default ChooseUs;
+      </div> */
+}
