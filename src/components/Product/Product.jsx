@@ -19,11 +19,11 @@ const Product = ({
       <div>
         <h2 className={styles.title}>{name}</h2>
         <p className={styles.text}>{description}</p>
-        {!isBouquet && (
+        {isBouquet && (
           <>
             <p className={styles.textSpan}>*Price started from {price}₴</p>
             <h3 className={styles.subTitleQuantity}>Quantity:</h3>
-            <Counter />
+            <Counter stock={stock} />
             <p className={styles.textSpan}>
               *Number of flowers in the bouquet, package is included
             </p>

@@ -3,7 +3,7 @@ import s from './Counter.module.css';
 import { FaMinus } from 'react-icons/fa';
 import { FaPlus } from 'react-icons/fa6';
 
-export const Counter = () => {
+export const Counter = ({ stock = 1000 }) => {
   const [counter, setCounter] = useState(1);
   const [step, setStep] = useState(1);
 
@@ -28,7 +28,11 @@ export const Counter = () => {
           <FaMinus className={s.icon} />
         </button>
         <h1 className={s.counter}>{counter}</h1>
-        <button onClick={handleIncreaseCounter} className={s.btn}>
+        <button
+          onClick={handleIncreaseCounter}
+          className={s.btn}
+          disabled={counter >= stock}
+        >
           <FaPlus className={s.icon} />
         </button>
       </div>
