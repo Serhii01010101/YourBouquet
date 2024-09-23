@@ -60,7 +60,7 @@ const FAQ = () => {
         <ul className={styles.FAQList}>
           {faqs.map((faq) => (
             <FAQItem
-              key={faq.indexndex}
+              key={faq.index}
               question={faq.question}
               answer={faq.answer}
             />

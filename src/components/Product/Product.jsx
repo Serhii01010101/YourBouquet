@@ -19,13 +19,16 @@ const Product = ({
       <div>
         <h2 className={styles.title}>{name}</h2>
         <p className={styles.text}>{description}</p>
-        <p className={styles.textSpan}>*Price started from 200₴</p>
-        <h3 className={styles.subTitleQuantity}>Quantity:</h3>
-        <Counter />
-        <p className={styles.textSpan}>
-          *Number of flowers in the bouquet, package is included
-        </p>
-
+        {!isBouquet && (
+          <>
+            <p className={styles.textSpan}>*Price started from {price}₴</p>
+            <h3 className={styles.subTitleQuantity}>Quantity:</h3>
+            <Counter />
+            <p className={styles.textSpan}>
+              *Number of flowers in the bouquet, package is included
+            </p>
+          </>
+        )}
         <h3 className={styles.subTitle}>Price: {price} ₴</h3>
         <button type="button" className={styles.button}>
           Add to Cart
