@@ -2,6 +2,7 @@ import styles from './Product.module.css';
 
 import pathSpriteScooter from '../../../public/icons.svg#icon-scooter';
 import pathSpriteCalendar from '../../../public/icons.svg#icon-calendar';
+import { Counter } from '../Counter/Counter';
 
 const Product = ({
   name,
@@ -20,7 +21,7 @@ const Product = ({
         <p className={styles.text}>{description}</p>
         <p className={styles.textSpan}>*Price started from 200₴</p>
         <h3 className={styles.subTitleQuantity}>Quantity:</h3>
-
+        <Counter />
         <p className={styles.textSpan}>
           *Number of flowers in the bouquet, package is included
         </p>
@@ -53,4 +54,3 @@ const Product = ({
 };
 
 export default Product;
-

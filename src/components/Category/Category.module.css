@@ -1,16 +1,40 @@
 .category {
+  padding: 100px 80px;
 }
 
 .categoryTitle {
+  font-family: 'Open Sans Hebrew', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #100f0f;
+  padding-bottom: 24px;
+  margin: 0 auto;
 }
 
 .categoryList {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
 }
 
 .categoryItem {
+  border: 0.5px solid #f880c8;
+  border-radius: 12px;
+  padding: 8px;
+  min-width: 97px;
+  height: 26px;
+  font-family: 'Open Sans Hebrew', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #100f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .categoryItemLink {
+  text-decoration: none;
 }
 
 .categoryItemLink:hover {
@@ -22,4 +46,7 @@
 }
 
 .categoryItemTitle {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 auto;
 }

@@ -1,0 +1,41 @@
+.flexContainer {
+  border: 1px solid #828282;
+  border-radius: 8px;
+  padding: 10px 16px;
+  width: 137px;
+  height: 52px;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.counter {
+  margin: 0;
+  font-family: 'Open Sans Hebrew', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000;
+}
+
+.wrapper {
+  display: flex;
+  gap: 21.5px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+}
+.icon {
+  height: 14px;
+  width: 14px;
+}

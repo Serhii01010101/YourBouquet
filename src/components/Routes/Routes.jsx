@@ -10,7 +10,10 @@ import Category from '../Category/Category';
 const AppRoutes = () => (
   <Routes>
     <Route path={ROUTES.HOME} element={<HomePage />} />
-    <Route path={ROUTES.SpecialOffer} element={<Category />} />
+    <Route
+      path={ROUTES.SpecialOffer}
+      element={<Category title="There are our Special offerh" />}
+    />
     <Route path="/products" element={<CatalogPage />} />
     <Route path="/products/:productId" element={<ProductDetailsPage />} />
   </Routes>
