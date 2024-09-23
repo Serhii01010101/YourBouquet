@@ -3,12 +3,12 @@ import { useSelector } from 'react-redux';
 
 import styles from '../Category/Category.module.css';
 
-const Category = () => {
+const Category = ({ title }) => {
   const { list } = useSelector(({ categories }) => categories);
 
   return (
     <section className={styles.category}>
-      <h2 className={styles.categoryTitle}>There are our {name}</h2>
+      <h2 className={styles.categoryTitle}>{title}</h2>
       <ul className={styles.categoryList}>
         {list.map(({ id, name }) => (
           <li key={id} className={styles.categoryItem}>

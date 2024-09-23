@@ -5,6 +5,7 @@ import { Loader } from '../components/Loader/Loader';
 import { ErrorMessage } from '../components/ErrorMessage/ErrorMessage';
 import ProductsList from '../components/ProductsList/ProductsList';
 import { apiGetProducts } from '../redux/products/productsSlice';
+import Category from '../components/Category/Category';
 
 const CatalogPage = () => {
   const dispatch = useDispatch();
@@ -25,7 +26,12 @@ const CatalogPage = () => {
     [STATUSES.success]: showProducts && <ProductsList products={products} />,
   };
 
-  return <div>{renderView[status]}</div>;
+  return (
+    <div>
+      <Category title="There are our collections of flowers" />
+      {renderView[status]}
+    </div>
+  );
 };
 
 export default CatalogPage;
