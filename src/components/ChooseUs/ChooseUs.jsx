@@ -11,7 +11,9 @@ const ChooseUs = () => {
   return (
     <section className={styles.chooseUs}>
       <div className={styles.chooseUSTitleContainer}>
-        <h2 className={styles.chooseUsTitle}>Why choose us?</h2>
+        <div className={styles.chooseUSTitleWrapper}>
+          <h2 className={styles.chooseUsTitle}>Why choose us?</h2>
+        </div>
       </div>
       <div className={styles.chooseUsContainer}>
         <ul className={styles.chooseUsList}>

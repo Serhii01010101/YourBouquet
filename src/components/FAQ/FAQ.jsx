@@ -55,8 +55,12 @@ const FAQ = () => {
 
   return (
     <section className={styles.FAQ}>
+      <div className={styles.wrapper}>
+        <div className={styles.FAQWrapper}>
+          <h2 className={styles.FAQTitle}>FAQ</h2>
+        </div>
+      </div>
       <div className={styles.FAQContainer}>
-        <h2 className={styles.FAQTitle}>FAQ</h2>
         <ul className={styles.FAQList}>
           {faqs.map((faq) => (
             <FAQItem
