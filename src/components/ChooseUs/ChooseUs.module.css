@@ -70,6 +70,7 @@
 @media screen and (max-width: 767px) {
   .chooseUsTitle {
     font-size: 24px;
+    margin-left: 0px;
   }
   .chooseUsItem {
     width: calc((100% - 64px * 1) / 2);
@@ -107,7 +108,7 @@
   row-gap: 32px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .chooseUsTitle {
     width: 219px;
     padding: 16px 20px;
