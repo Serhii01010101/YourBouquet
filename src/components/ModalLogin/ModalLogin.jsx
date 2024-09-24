@@ -1,11 +1,17 @@
+/* eslint-disable react/no-unescaped-entities */
 import { ErrorMessage, Field, Formik, Form } from 'formik';
 import s from './ModalLoogin.module.css';
 import * as Yup from 'yup';
+import Modal from 'react-modal';
+import { FcGoogle } from 'react-icons/fc';
 
 import loginImage from '../../../public/imgModalLogin.png';
 import { Link } from 'react-router-dom';
+import SvgLine from '../../../public/long-line';
 
-const ModalLogin = ({ closeModal }) => {
+Modal.setAppElement('#root');
+
+const ModalLogin = ({ isOpen, closeModal }) => {
   const initialValues = {
     email: '',
     password: '',
@@ -22,50 +28,64 @@ const ModalLogin = ({ closeModal }) => {
     password: Yup.string().min(3, 'Too Short!').max(50).required('Required'),
   });
   return (
-    <div className={s.modalOverlay}>
-      <div className={s.modal}>
-        <Formik
-          initialValues={initialValues}
-          onSubmit={handleSubmit}
-          validationSchema={orderError}
-        >
-          <Form className={s.form}>
-            <h2>Welcome back!</h2>
-            <h3>Enter your account details</h3>
-            <button type="submit">Continue with Google</button>
-            <span>----------- or ----------</span>
-            <label className={s.label}>
-              <span>Email</span>
-              <Field name="email" placeholder="Enter your email" />
-              <ErrorMessage name="email" component="p" className={s.error} />
+    <Modal
+      isOpen={isOpen}
+      onRequestClose={closeModal}
+      pe
+      className={s.modal}
+      overlayClassName={s.modalOverlay}
+    >
+      <Formik
+        initialValues={initialValues}
+        onSubmit={handleSubmit}
+        validationSchema={orderError}
+      >
+        <Form className={s.form}>
+          <h2>Welcome back!</h2>
+          <h3>Enter your account details</h3>
+          <button className={s.btngoogle} type="submit">
+            <FcGoogle className={s.svg} />
+            Continue with Google
+          </button>
+          <span className={s.or}>
+            <SvgLine className={s.line} /> or
+            <SvgLine className={s.line} />
+          </span>
+          <label className={s.label}>
+            <span>Email</span>
+            <Field name="email" placeholder="Enter your email" />
+            <ErrorMessage name="email" component="p" className={s.error} />
+          </label>
+          <label className={s.label}>
+            <span>Password</span>
+            <Field name="password" placeholder="Enter your password" />
+            <ErrorMessage name="password" component="p" className={s.error} />
+          </label>
+          <div className={s.check}>
+            <label>
+              <Field type="checkbox" name="agree" className={s.input} />
+              Keep me signet in
             </label>
-            <label className={s.label}>
-              <span>Password</span>
-              <Field name="password" placeholder="Enter your password" />
-              <ErrorMessage name="password" component="p" className={s.error} />
-            </label>
-            <div>
-              <label>
-                <Field type="checkbox" name="agree" className={s.input} />
-                Keep me signet in
-              </label>
-              <Link>Forgot password</Link>
-            </div>
-
-            <button type="submit">Sign in</button>
             <p>
-              Don't have an account?
-              <span>
-                <Link>Create an account</Link>
-              </span>
+              <Link>Forgot password</Link>
             </p>
-          </Form>
-        </Formik>
-        <div className={s.img}>
-          <img src={loginImage} alt="Login illustration" />
-        </div>
+          </div>
+
+          <button className={s.btn} type="submit">
+            Sign in
+          </button>
+          <div className={s.wraperNewAcc}>
+            <p className={s.newacc}>Don't have an account?</p>
+            <p className={s.linkNewacc}>
+              <Link>Create an account</Link>
+            </p>
+          </div>
+        </Form>
+      </Formik>
+      <div className={s.img}>
+        <img src={loginImage} alt="Login illustration" />
       </div>
-    </div>
+    </Modal>
   );
 };
 

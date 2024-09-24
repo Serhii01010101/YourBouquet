@@ -98,7 +98,7 @@ const Header = () => {
           <button onClick={openModal} type="button" className={styles.btnLogin}>
             Log in
           </button>
-          {isOpen && <ModalLogin closeModal={closeModal} />}
+          {isOpen && <ModalLogin closeModal={closeModal} isOpen={openModal} />}
         </div>
 
         <div className={styles.headerMobileBox}>

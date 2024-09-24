@@ -27,7 +27,6 @@
   border-radius: 12px;
   flex-direction: column;
   gap: 15px;
-  padding: 20px;
   & h2 {
     font-family: 'Open Sans Hebrew', sans-serif;
     font-weight: 400;
@@ -41,16 +40,113 @@
     font-size: 16px;
     text-align: center;
     color: #100f0f;
+    padding-bottom: 16px;
   }
+}
+
+.form h2,
+.form h3 {
+  margin: 0;
+}
+
+.btn {
+  border-radius: 12px;
+  padding: 14px;
+  width: 327px;
+  height: 53px;
+  background: #f880c8;
+  font-family: 'Open Sans Hebrew', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fcfcfc;
+  border: none;
 }
 
 .label {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 4px;
   & input {
     background: #f5f5f5;
     border-radius: 12px;
     padding: 16px;
+    border: none;
   }
+  & span {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #100f0f;
+  }
+}
+
+.btngoogle {
+  background: #f5f5f5;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #100f0f;
+  border: none;
+  border-radius: 12px;
+  width: 327px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.svg {
+  width: 21px;
+  height: 21px;
+}
+
+.check {
+  font-family: 'Open Sans Hebrew', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #100f0f;
+  display: flex;
+  gap: 104px;
+  & p {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #100f0f;
+  }
+}
+.wraperNewAcc {
+  display: flex;
+  gap: 4px;
+}
+.newacc {
+  font-family: 'Open Sans Hebrew', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #100f0f;
+}
+
+.linkNewacc {
+  font-family: 'Open Sans Hebrew', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #f880c8;
+}
+
+.check label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
