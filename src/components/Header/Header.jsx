@@ -7,6 +7,8 @@ import pathSprite from '../../../public/icons.svg#icon-search';
 
 import pathSpriteHeart from '../../../public/icons.svg#icon-heart';
 import pathSpriteBasket from '../../../public/icons.svg#icon-basket';
+import { useToggle } from '../../hooks/useToggle';
+import ModalLogin from '../ModalLogin/ModalLogin';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,6 +17,8 @@ const Header = () => {
     setIsMobileMenuOpen((prevState) => !prevState);
   };
 
+  const { isOpen, openModal, closeModal } = useToggle();
+  console.log('Is modal open:', isOpen);
   return (
     <header className={styles.header}>
       <div className={styles.mainContainer}>
@@ -91,9 +95,10 @@ const Header = () => {
             </Link>
           </div>
 
-          <button type="button" className={styles.btnLogin}>
+          <button onClick={openModal} type="button" className={styles.btnLogin}>
             Log in
           </button>
+          {isOpen && <ModalLogin closeModal={closeModal} isOpen={openModal} />}
         </div>
 
         <div className={styles.headerMobileBox}>
