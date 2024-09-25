@@ -1,12 +1,12 @@
-import styles from './ErrorMessage.module.css';
+import styles from './SuccessMessage.module.css';
 import { PaymentBtn } from '../PaymentBtn/PaymentBtn';
 
-// import succesDone from '../../../public/icons.svg#icon-easy-order';
+// // import succesDone from '../../../public/icons.svg#icon-easy-order';
 import successDone from '../../../public/icons.svg#icon-easy-order';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
-export const ErrorMessage = ({ error }) => {
+export const SuccessMessage = () => {
   return (
     <>
       <Header />
@@ -17,7 +17,7 @@ export const ErrorMessage = ({ error }) => {
             <svg className={styles.offerItemIcon} width="80" height="80">
               <use href={successDone}></use>
             </svg>
-            <p className={styles.text}>Oops, some error wrong {error}</p>
+            <p className={styles.text}>Success! </p>
             <PaymentBtn />
           </div>
         </div>
