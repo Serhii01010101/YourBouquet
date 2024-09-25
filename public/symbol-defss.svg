@@ -1,0 +1,15 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-error" viewBox="0 0 37 32">
+<path fill="none" stroke="#f00" style="stroke: var(--color1, #f00)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3495" d="M9.631 7.146l17.575 17.575"></path>
+<path fill="none" stroke="#f00" style="stroke: var(--color1, #f00)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3495" d="M9.631 24.854l17.575-17.575"></path>
+</symbol>
+<symbol id="icon-circle" viewBox="0 0 32 32">
+<path fill="#d9d9d9" style="fill: var(--color2, #d9d9d9)" d="M4.858 27.314c-2.087-2.087-3.555-4.709-4.244-7.579s-0.571-5.873 0.341-8.679c0.912-2.806 2.582-5.306 4.826-7.222s4.974-3.175 7.888-3.636 5.9-0.108 8.626 1.021c2.726 1.129 5.087 2.99 6.821 5.377s2.775 5.208 3.006 8.149c0.231 2.942-0.355 5.89-1.695 8.519l-2.851-1.453c1.072-2.103 1.541-4.462 1.356-6.815s-1.018-4.61-2.405-6.519-3.276-3.399-5.457-4.302c-2.181-0.903-4.569-1.186-6.901-0.817s-4.516 1.376-6.311 2.909c-1.795 1.533-3.131 3.533-3.861 5.778s-0.824 4.648-0.273 6.944c0.551 2.295 1.726 4.394 3.395 6.063l-2.263 2.263z"></path>
+<path fill="#f880c8" style="fill: var(--color3, #f880c8)" d="M30.023 19.939c0.85 0.242 1.351 1.131 1.025 1.952-0.962 2.43-2.508 4.595-4.511 6.298-2.411 2.050-5.375 3.339-8.519 3.704s-6.324-0.21-9.141-1.653c-2.34-1.199-4.341-2.952-5.835-5.096-0.505-0.725-0.222-1.705 0.55-2.135s1.739-0.146 2.262 0.567c1.173 1.597 2.705 2.907 4.482 3.817 2.253 1.154 4.798 1.614 7.313 1.322s4.886-1.323 6.815-2.963c1.521-1.293 2.712-2.919 3.487-4.742 0.346-0.813 1.222-1.312 2.072-1.070z"></path>
+</symbol>
+<symbol id="icone-done" viewBox="0 0 37 32">
+<path fill="none" stroke="#f880c8" style="stroke: var(--color3, #f880c8)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.0909" d="M2.545 17.6l10 10.036 22-25.091"></path>
+</symbol>
+</defs>
+</svg>

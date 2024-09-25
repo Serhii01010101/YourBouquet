@@ -1,12 +1,12 @@
-import styles from './ErrorMessage.module.css';
-import { PaymentBtn } from '../PaymentBtn/PaymentBtn';
+import styles from './WaitMessage.module.css';
 
-// import succesDone from '../../../public/icons.svg#icon-easy-order';
+// // import succesDone from '../../../public/icons.svg#icon-easy-order';
 import successDone from '../../../public/icons.svg#icon-easy-order';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import { ContinueBtn } from '../ContinueBtn/ContinueBtn';
 
-export const ErrorMessage = ({ error }) => {
+export const WaitMessage = () => {
   return (
     <>
       <Header />
@@ -17,8 +17,8 @@ export const ErrorMessage = ({ error }) => {
             <svg className={styles.offerItemIcon} width="80" height="80">
               <use href={successDone}></use>
             </svg>
-            <p className={styles.text}>Oops, some error wrong {error}</p>
-            <PaymentBtn />
+            <p className={styles.text}>Wait... </p>
+            <ContinueBtn />
           </div>
         </div>
       </div>
