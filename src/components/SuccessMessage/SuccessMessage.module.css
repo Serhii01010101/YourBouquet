@@ -40,7 +40,8 @@
 }
 
 .offerItemIcon {
-  background-color: black;
+  /* background-color: black; */
+  stroke: #F880C8;
   display: flex;
   width: 118px;
   height: 103px;

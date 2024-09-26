@@ -7,7 +7,7 @@ import AppRoutes from './Routes/Routes';
 import styles from '../components/App.module.css';
 import { useEffect } from 'react';
 import { apiGetCategories } from '../redux/categories/categoriesSlice';
-// import { SuccessMessage } from './SuccessMessage/SuccessMessage';
+import { SuccessMessage } from './SuccessMessage/SuccessMessage';
 // import { ErrorMessage } from './ErrorMessage/ErrorMessage';
 // import { WaitMessage } from './WaitMessage/WaitMessage';
 
@@ -26,9 +26,9 @@ export const App = () => {
       </main>
       <Footer />
 
-      {/* <ErrorMessage />
+      {/* <ErrorMessage /> */}
       <SuccessMessage />
-      <WaitMessage /> */}
+      {/* <WaitMessage /> */}
     </div>
   );
 };

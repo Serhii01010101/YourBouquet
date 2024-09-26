@@ -78,6 +78,10 @@
   <path d="M28 14C30.3327 15.1165 35 19.5545 35 26.25M27.9825 8.75H28.9398C30.6618 8.75 32.2438 9.765 33.0418 11.3802C33.593 12.5002 33.0418 14 31.4738 14H27.9825M27.9825 8.75V14M27.9825 8.75H22.652M27.9825 14C27.9825 17.3477 27.6115 28 21 28H30.9155" stroke="#100F0F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 
+<symbol id="icon-success" width="110" height="95" viewBox="0 0 110 95" fill="none">
+  <path fill="none" stroke="#f880c8" style="stroke: var(--color1, #f880c8)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.7158" d="M3.705 16.303l9.263 9.297 20.379-23.242"></path>
+</symbol>
+
 
 
   </defs>
