@@ -1,11 +1,13 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { STATUSES } from '../utils/constants';
-import { Loader } from '../components/Loader/Loader';
-import { ErrorMessage } from '../components/ErrorMessage/ErrorMessage';
-import ProductsList from '../components/ProductsList/ProductsList';
 import { apiGetProducts } from '../redux/products/productsSlice';
+
+import { STATUSES } from '../utils/constants';
+
 import Category from '../components/Category/Category';
+import ProductsList from '../components/ProductsList/ProductsList';
+import { ErrorMessage } from '../components/ErrorMessage/ErrorMessage';
+import { WaitMessage } from '../components/WaitMessage/WaitMessage';
 
 const CatalogPage = () => {
   const dispatch = useDispatch();
@@ -21,7 +23,7 @@ const CatalogPage = () => {
   // const visiblePosts = POSTS_PER_PAGE * page;
 
   const renderView = {
-    [STATUSES.pending]: <Loader />,
+    [STATUSES.pending]: <WaitMessage />,
     [STATUSES.error]: <ErrorMessage error={error} />,
     [STATUSES.success]: showProducts && <ProductsList products={products} />,
   };

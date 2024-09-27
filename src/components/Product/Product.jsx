@@ -9,7 +9,7 @@ const Product = ({
   photos,
   price = 0,
   description = 'Тут має бути опис товару',
-  discountPercent,
+  discountPercent = 0,
   stock,
   isBouquet = true,
 }) => {
@@ -22,14 +22,22 @@ const Product = ({
         {!isBouquet && (
           <>
             <p className={styles.textSpan}>*Price started from {price}₴</p>
-            <h3 className={styles.subTitleQuantity}>Quantity:</h3>
+            <p className={styles.subTitleQuantity}>Quantity:</p>
             <Counter stock={stock} />
             <p className={styles.textSpan}>
               *Number of flowers in the bouquet, package is included
             </p>
           </>
         )}
-        <h3 className={styles.subTitle}>Price: {price} ₴</h3>
+
+        <p className={styles.subTitle}>Price: {price} ₴</p>
+
+        {discountPercent > 0 && (
+          <span className={styles.discountPrice}>
+            {(price - (price * discountPercent) / 100).toFixed(0)}
+          </span>
+        )}
+
         <button type="button" className={styles.button}>
           Add to Cart
         </button>
