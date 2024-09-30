@@ -1,0 +1,56 @@
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.success {
+  width: 198px;
+  padding: 14px;
+  color: #006dd2;
+  border: 1px solid var(--Elements-Colors-Blue, #006dd2);
+  background: var(--BG-White, #fff);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .success {
+    padding: 14px;
+    width: 216px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .success {
+    width: 188px;
+  }
+}
+
+.pinkBtn {
+  display: inline-block;
+  width: 197px;
+  padding: 14px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid var(--Elements-Colors-Blue, #f880c8);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--Text-Colors-White, #fcfcfc);
+  background: var(--Elements-Colors-Hot-Pink, #f880c8);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .pinkBtn {
+    padding: 14px;
+    width: 216px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pinkBtn {
+    width: 188px;
+  }
+}

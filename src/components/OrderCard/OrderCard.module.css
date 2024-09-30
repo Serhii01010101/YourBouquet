@@ -1,0 +1,79 @@
+.mainContainer {
+  padding: 40px 80px;
+  margin: 20px 0;
+}
+
+.mainWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.orderDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 53px;
+}
+
+.imgWrapper {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.headings {
+  display: flex;
+  gap: 237px;
+}
+
+.headingsItem {
+  /* font-family: 'Open Sans Hebrew'; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 88px;
+  color: #8b8b8b;
+}
+
+.infoList {
+  display: flex;
+  gap: 129px;
+}
+
+.infoItemWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.infoTitle {
+  /* font-family: 'Open Sans Hebrew'; */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.infoPriceWrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.infoPriceNew {
+  /* font-family: 'Open Sans Hebrew'; */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.infoPriceOld {
+  font-family: 'Open Sans Hebrew';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: line-through;
+  color: #f880c8;
+}

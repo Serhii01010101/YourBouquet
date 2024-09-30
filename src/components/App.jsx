@@ -8,6 +8,7 @@ import styles from '../components/App.module.css';
 import { useEffect } from 'react';
 import { apiGetCategories } from '../redux/categories/categoriesSlice';
 import { SuccessMessage } from './SuccessMessage/SuccessMessage';
+import Cart from './Cart/Cart';
 // import { ErrorMessage } from './ErrorMessage/ErrorMessage';
 // import { WaitMessage } from './WaitMessage/WaitMessage';
 
@@ -26,8 +27,10 @@ export const App = () => {
       </main>
       <Footer />
 
+      {/* <Cart /> */}
+
       {/* <ErrorMessage /> */}
-      <SuccessMessage />
+      {/* <SuccessMessage /> */}
       {/* <WaitMessage /> */}
     </div>
   );
