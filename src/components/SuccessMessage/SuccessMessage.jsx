@@ -15,7 +15,7 @@ export const SuccessMessage = () => {
               <use href={pathSprite} />
             </svg>
             <p className={styles.text}>Success! </p>
-            <Button text="Succes" styleType="success" />
+            <Button text="Success" styleType="success" />
           </div>
         </div>
       </div>
