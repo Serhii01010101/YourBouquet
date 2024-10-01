@@ -21,13 +21,13 @@ export const App = () => {
 
   return (
     <div className={styles.appContainer}>
-      <Header />
+      {/* <Header />
       <main>
         <AppRoutes />
       </main>
-      <Footer />
+      <Footer /> */}
 
-      {/* <Cart /> */}
+      <Cart />
 
       {/* <ErrorMessage /> */}
       {/* <SuccessMessage /> */}

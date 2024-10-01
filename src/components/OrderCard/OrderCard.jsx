@@ -8,10 +8,9 @@ const OrderCard = () => {
         <div className={styles.mainWrapper}>
           <div className={styles.imgWrapper}>
             <img
+              className={styles.img}
               src="https://i.pinimg.com/564x/01/2d/0b/012d0b29a64255a2464b00dfc8f6a421.jpg"
               alt=""
-              width={197}
-              height={232}
             />
           </div>
           <div className={styles.orderDetails}>
@@ -39,9 +38,11 @@ const OrderCard = () => {
                     <p className={styles.infoItemPrice}>1850 ₴</p>
                   </li>
                 </ul>
-                <div className={styles.icon}></div>
               </div>
             </div>
+          </div>
+          <div className={styles.iconContainer}>
+            <div className={styles.icon}></div>
           </div>
         </div>
       </div>

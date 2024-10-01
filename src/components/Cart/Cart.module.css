@@ -1,3 +1,12 @@
+@media (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+}
+
 .mainContainer {
   padding: 100px 0;
   background-color: #fcfcfc;
